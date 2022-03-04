@@ -44,3 +44,10 @@ myPortfolio.formEventListener = function(){
 
 //call the init method
 myPortfolio.init();
+
+
+
+//portfolio section:
+//first is to create a class to setup the basic styling of the pop up (div with width/height, the video container, the text wrapper container)
+//in java, on click of pic, call the class to show, and add in innerhtml for text wrapper, and plug in video, and an x icon at top
+//make an event listener for an 'x' that when clicked, it removes the class and clears the inner html and video src
