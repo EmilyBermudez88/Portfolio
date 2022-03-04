@@ -1,3 +1,42 @@
 section {
      margin-bottom: 50px;
 }
+
+//ABOUT SECTION
+.aboutText {
+     p{
+          margin-bottom: 15px;
+          &:first-child{
+               font-weight:400;
+          }
+     }
+}
+
+
+//SKILLSET SECTION
+.skillsContainer {
+     display:flex;
+     flex-direction:row;
+     flex-wrap:wrap;
+}
+
+.skill{
+     display:flex;
+     flex-direction:column;
+     justify-content: space-between;
+     text-align:center;
+     height: 93px;
+     width: calc((100% / 4));
+     margin-bottom: 30px;
+     i{
+          font-size:3.5rem;
+          transition: 0.3s;
+     }
+     &:hover,
+     &:focus {
+          i{
+               font-size: 3.8rem;
+               color:$accent;
+          }
+     }
+}
