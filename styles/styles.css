@@ -324,7 +324,7 @@ a {
 button:hover, button:focus,
 a:hover,
 a:focus {
-  background-color: #FCDE16;
+  background-color: #ffe229;
   outline: none;
 }
 
@@ -334,7 +334,7 @@ li {
 
 header {
   height: 100vh;
-  background-color: #dedede;
+  background-color: #c08ce6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,20 +346,32 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
-header h1,
-header h3 {
+header h1 {
   margin-left: 15%;
 }
-header i {
+header h3 {
+  margin-left: 15%;
+  color: #f8f8f8;
+}
+header a {
   position: absolute;
-  font-size: 3rem;
   bottom: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  color: #8c42c1;
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
   -webkit-animation: arrow 1.2s linear infinite;
           animation: arrow 1.2s linear infinite;
+}
+header a:hover, header a:focus {
+  background-color: transparent;
+  border: 1px solid #2d2d2d;
+}
+header a i {
+  font-size: 3rem;
+  color: #2d2d2d;
 }
 
 @-webkit-keyframes arrow {
@@ -395,7 +407,7 @@ footer p {
 }
 footer p span {
   font-size: 1.5rem;
-  color: #FCDE16;
+  color: #ffe229;
 }
 
 section {
@@ -409,13 +421,29 @@ section {
   font-weight: 400;
 }
 
-.projectsContainer {
+.projects .wrapper {
   position: relative;
-  min-height: 130vh;
+}
+.projects .findOutMore {
+  margin-bottom: 15px;
+}
+
+.projectsContainer {
+  height: 420px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .app {
-  position: absolute;
   background-color: #dedede;
   height: 420px;
   width: 60%;
@@ -431,36 +459,26 @@ section {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   overflow: hidden;
+  z-index: 10;
+  position: relative;
 }
-.app:hover, .app:focus {
+.app:hover, .app:focus, .app:active {
   -webkit-animation: scaleUp 0.3s linear;
           animation: scaleUp 0.3s linear;
-  background-color: #FCDE16;
+  background-color: #ffe229;
   cursor: pointer;
 }
 .app img {
-  max-height: 110%;
+  max-height: 100%;
 }
 
-.runningApp {
-  top: 0;
-  left: 0;
-}
-
-.restaurantApp {
-  top: 0;
-  right: 0;
-  width: 35%;
-}
-
+.runningApp,
 .colorApp {
-  bottom: 0;
-  right: 0;
+  width: 60%;
 }
 
-.blankApp {
-  bottom: 0;
-  left: 0;
+.blankApp,
+.restaurantApp {
   width: 35%;
 }
 
@@ -493,11 +511,34 @@ section {
             transform: scale(1);
   }
 }
+.overlay1,
+.overlay2,
+.overlay3,
+.overlay4 {
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  position: absolute;
+}
+.overlay1:focus,
+.overlay2:focus,
+.overlay3:focus,
+.overlay4:focus {
+  border: 2px solid black;
+}
+
+.popUpContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 .appPopUp {
   display: block;
   width: 100%;
-  height: 100%;
-  z-index: 10;
+  height: calc(100% - 70px);
+  padding: 10px 0;
+  z-index: 20;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,26 +564,29 @@ section {
   top: 15px;
   right: 15px;
   font-size: 2rem;
-  color: #FCDE16;
+  color: #ffe229;
   background-color: #565656;
   border-radius: 4px;
   padding: 4px 10px;
+}
+.appPopUp i:focus {
+  border: 2px solid #ffe229;
 }
 .appPopUp h3 {
   text-align: center;
 }
 .appPopUp hr {
   width: 30%;
-  border: 1px solid #FCDE16;
+  border: 1px solid #ffe229;
 }
 .appPopUp img {
-  max-width: 800px;
+  max-width: 950px;
   width: 100%;
 }
 .appPopUp p {
   max-width: 75%;
-  margin: 15px auto;
   color: #2d2d2d;
+  margin: 10px auto;
 }
 .appPopUp p span {
   font-style: italic;
@@ -590,7 +634,7 @@ section {
 }
 .skill:hover i, .skill:focus i {
   font-size: 3.8rem;
-  color: #FCDE16;
+  color: #ffe229;
 }
 
 .contactFlexContainer {
@@ -606,10 +650,10 @@ section {
           justify-content: space-between;
 }
 .contactFlexContainer .contactForm {
-  width: 45%;
+  width: 52%;
 }
 .contactFlexContainer .contactText {
-  width: 45%;
+  width: 40%;
 }
 
 .socialLinks {
@@ -635,7 +679,7 @@ section {
 }
 .socialLinks li a:hover, .socialLinks li a:focus {
   background-color: transparent;
-  color: #FCDE16;
+  color: #ffe229;
 }
 
 .contactForm p {
@@ -668,7 +712,7 @@ textarea {
 input:active, input:focus,
 textarea:active,
 textarea:focus {
-  border: 1px solid #FCDE16;
+  border: 1px solid #ffe229;
   outline: none;
   background-color: #f9f9f9;
 }

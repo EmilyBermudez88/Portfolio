@@ -13,12 +13,23 @@ section {
 }
 
 //PORTFOLIO SECTION
+.projects {
+     .wrapper {
+          position:relative;
+     }
+     .findOutMore {
+          margin-bottom:15px;
+     }
+}
+
 .projectsContainer{
-     position:relative;
-     min-height:130vh;
+     height:420px;
+     margin-bottom: 30px;
+     display:flex;
+     flex-direction:row;
+     justify-content: space-between;
 }
 .app{
-     position:absolute;
      background-color:$secondaryBackground;
      height: 420px;
      width:60%;
@@ -27,33 +38,26 @@ section {
      justify-content: center;
      transition: 0.4s;
      overflow:hidden;
+     z-index:10;
+     position:relative;
      &:hover,
-     &:focus {
+     &:focus,
+     &:active {
           animation: scaleUp 0.3s linear;
           background-color: $accent;
           cursor:pointer;
      }
      img{
-          max-height: 110%;
+          max-height: 100%;
           // border:3px solid green;         
      }
 }
-.runningApp {
-     top:0;
-     left:0;
-}
-.restaurantApp{
-     top:0;
-     right:0;
-     width: 35%;
-}
-.colorApp{
-     bottom:0;
-     right:0;
-}
-.blankApp{
-     bottom:0;
-     left:0;
+.runningApp,
+.colorApp {
+     width: 60%;
+} 
+.blankApp,
+.restaurantApp {
      width:35%;
 }
 
@@ -70,11 +74,30 @@ section {
      }
 }
 
+.overlay1,
+.overlay2,
+.overlay3,
+.overlay4 {
+     width:100%;
+     height:100%;
+     z-index:30;
+     position:absolute;
+     &:focus{
+          border:2px solid black;
+     }
+}
+
+.popUpContainer {
+     position:absolute;
+     height:100%;
+     width:100%;
+}
 .appPopUp {
      display:block;
      width: 100%;
-     height:100%;
-     z-index: 10;
+     height:calc(100% - 70px);
+     padding: 10px 0;
+     z-index: 20;
      position:absolute;
      display:flex;
      flex-direction:column;
@@ -96,6 +119,9 @@ section {
           background-color: #565656;
           border-radius:4px;
           padding: 4px 10px;
+          &:focus{
+               border:2px solid $accent;
+          }
      }
      h3{
           text-align:center;
@@ -105,13 +131,13 @@ section {
           border:1px solid $accent;
      }
      img{
-          max-width: 800px;
+          max-width: 950px;
           width:100%;
      }
      p{
           max-width: 75%;
-          margin: 15px auto;
           color:$headingColor;
+          margin: 10px auto;
           span{
                font-style: italic;
           }

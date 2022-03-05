@@ -2,39 +2,62 @@ const myPortfolio={};
 
 //create initial method to kick off the app
 myPortfolio.init = function(){
-     myPortfolio.arrowEventListener();
+     // myPortfolio.arrowEventListener();
      myPortfolio.formEventListener();
 }
 
-//create event listener to listen for click of down arrow icon
-const downArrow = document.getElementById('scrollDown');
-myPortfolio.arrowEventListener = function(){
-     downArrow.addEventListener('click', function(e){
-          e.preventDefault();
-          const aboutSection = document.getElementById('about');
-          aboutSection.scrollIntoView({behavior:"smooth"});
-     })
-}
+// //create event listener to listen for click of down arrow icon
+// const downArrow = document.getElementById('scrollDown');
+// myPortfolio.arrowEventListener = function(){
+//      downArrow.addEventListener('click', function(e){
+//           e.preventDefault();
+//           const aboutSection = document.getElementById('about');
+//           aboutSection.scrollIntoView({behavior:"smooth"});
+//      })
+// }
 
 //event listeners for each of the project images (to pull up more information)
 myPortfolio.projectDivs = document.querySelectorAll('.app');
 myPortfolio.projectDivs.forEach(function(project){
      project.addEventListener('click', function(e){
-          // const source = 'file:///Users/emilyread/Documents/JUNO/BOOTCAMP/portfolio/emilyReadPortfolio/assets/';
-          const source="https://emilyreadscode.ca/assets/"
-          console.log(e.target.class);
-          console.log(e.target.src);
-          if(e.target.src == `${source}weatherApp.png`) {
+
+          if(e.target.className==="overlay1") {
                const runningText = document.querySelector('.runningText');
                runningText.classList.remove('textContainer');
                runningText.classList.add('appPopUp');
                myPortfolio.closeProjectEvent(runningText);
-          } else if (e.target.src == `${source}restaurantApp.png`) {
+          } else if (e.target.className==="overlay2") {
                const restaurantText = document.querySelector('.restaurantText');
                restaurantText.classList.remove('textContainer');
                restaurantText.classList.add('appPopUp');
                myPortfolio.closeProjectEvent(restaurantText);
-          } else if(e.target.src == `${source}colorApp.png`) {
+          } else if(e.target.className==="overlay4") {
+               const colorText = document.querySelector('.colorText');
+               colorText.classList.remove('textContainer');
+               colorText.classList.add('appPopUp');
+               myPortfolio.closeProjectEvent(colorText);
+          } else {
+               const blankText = document.querySelector('.blankText');
+               blankText.classList.remove('textContainer');
+               blankText.classList.add('appPopUp');
+               myPortfolio.closeProjectEvent(blankText);
+          };
+     })
+
+     //event listener for tabbing:
+     project.addEventListener('keypress', function (e) {
+          console.log(e.key);
+          if (e.target.className === "overlay1") {
+               const runningText = document.querySelector('.runningText');
+               runningText.classList.remove('textContainer');
+               runningText.classList.add('appPopUp');
+               myPortfolio.closeProjectEvent(runningText);
+          } else if (e.target.className === "overlay2") {
+               const restaurantText = document.querySelector('.restaurantText');
+               restaurantText.classList.remove('textContainer');
+               restaurantText.classList.add('appPopUp');
+               myPortfolio.closeProjectEvent(restaurantText);
+          } else if (e.target.className === "overlay4") {
                const colorText = document.querySelector('.colorText');
                colorText.classList.remove('textContainer');
                colorText.classList.add('appPopUp');
@@ -49,11 +72,18 @@ myPortfolio.projectDivs.forEach(function(project){
 })
 
 myPortfolio.closeProjectEvent = function (clickedElement) {
-     const closeProject = document.querySelectorAll('.projectsContainer i')
+     const closeProject = document.querySelectorAll('.popUpContainer i')
      closeProject.forEach(function(icon){
           icon.addEventListener('click', function () {
                clickedElement.classList.remove('addPopUp');
                clickedElement.classList.add('textContainer');
+          })
+          icon.addEventListener('keypress', function (e) {
+               console.log(e.key);
+               if(e.key === 'Enter'){
+               clickedElement.classList.remove('addPopUp');
+               clickedElement.classList.add('textContainer');
+               }
           })
      })     
 }
