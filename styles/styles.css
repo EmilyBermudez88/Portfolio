@@ -358,8 +358,33 @@ header i {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: #8c42c1;
+  -webkit-animation: arrow 1.2s linear infinite;
+          animation: arrow 1.2s linear infinite;
 }
 
+@-webkit-keyframes arrow {
+  0% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 18px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 18px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
 footer {
   background-color: #2d2d2d;
   padding: 10px 0;
