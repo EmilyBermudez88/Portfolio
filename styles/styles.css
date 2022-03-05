@@ -251,7 +251,6 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
 }
 
 .wrapper {
@@ -300,6 +299,7 @@ h3 {
   line-height: 2.25rem;
   text-transform: uppercase;
   letter-spacing: 4px;
+  margin-bottom: 5px;
 }
 
 h4 {
@@ -413,7 +413,8 @@ section {
   position: relative;
   min-height: 130vh;
 }
-.projectsContainer .app {
+
+.app {
   position: absolute;
   background-color: #dedede;
   height: 420px;
@@ -431,33 +432,67 @@ section {
   transition: 0.4s;
   overflow: hidden;
 }
-.projectsContainer .app:hover, .projectsContainer .app:focus {
+.app:hover, .app:focus {
+  -webkit-animation: scaleUp 0.3s linear;
+          animation: scaleUp 0.3s linear;
   background-color: #FCDE16;
   cursor: pointer;
 }
-.projectsContainer .app img {
-  max-height: 100%;
-  padding: 50px 0;
+.app img {
+  max-height: 110%;
 }
-.projectsContainer .runningApp {
+
+.runningApp {
   top: 0;
   left: 0;
 }
-.projectsContainer .restaurantApp {
+
+.restaurantApp {
   top: 0;
   right: 0;
   width: 35%;
 }
-.projectsContainer .colorApp {
+
+.colorApp {
   bottom: 0;
   right: 0;
 }
-.projectsContainer .blankApp {
+
+.blankApp {
   bottom: 0;
   left: 0;
   width: 35%;
 }
 
+@-webkit-keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 .appPopUp {
   display: block;
   width: 100%;
@@ -480,7 +515,7 @@ section {
   border: 5px solid #2d2d2d;
   background-color: #dedede;
 }
-.appPopUp.blankText img, .appPopUp.restaurantText img {
+.appPopUp.blankText img {
   max-width: 60%;
 }
 .appPopUp i {
@@ -493,13 +528,24 @@ section {
   border-radius: 4px;
   padding: 4px 10px;
 }
+.appPopUp h3 {
+  text-align: center;
+}
 .appPopUp hr {
   width: 30%;
   border: 1px solid #FCDE16;
 }
+.appPopUp img {
+  max-width: 800px;
+  width: 100%;
+}
 .appPopUp p {
-  max-width: 86%;
+  max-width: 75%;
   margin: 15px auto;
+  color: #2d2d2d;
+}
+.appPopUp p span {
+  font-style: italic;
 }
 .appPopUp h4 {
   margin-top: 15px;
@@ -625,4 +671,14 @@ textarea:focus {
   border: 1px solid #FCDE16;
   outline: none;
   background-color: #f9f9f9;
+}
+
+@media (max-width: 950px) {
+  .projectsContainer .app {
+    height: 380px;
+  }
+  .projectsContainer .app img {
+    max-height: 100%;
+    padding: 10px 0;
+  }
 }

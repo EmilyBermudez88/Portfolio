@@ -16,44 +16,57 @@ section {
 .projectsContainer{
      position:relative;
      min-height:130vh;
-     .app{
-          position:absolute;
-          background-color:$secondaryBackground;
-          height: 420px;
-          width:60%;
-          display:flex;
-          align-items: center;
-          justify-content: center;
-          transition: 0.4s;
-          overflow:hidden;
-          &:hover,
-          &:focus {
-               background-color: $accent;
-               cursor:pointer;
-          }
-          img{
-               max-height: 100%;
-               padding: 50px 0;
-               
-          }
+}
+.app{
+     position:absolute;
+     background-color:$secondaryBackground;
+     height: 420px;
+     width:60%;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     transition: 0.4s;
+     overflow:hidden;
+     &:hover,
+     &:focus {
+          animation: scaleUp 0.3s linear;
+          background-color: $accent;
+          cursor:pointer;
      }
-     .runningApp {
-          top:0;
-          left:0;
+     img{
+          max-height: 110%;
+          // border:3px solid green;         
      }
-     .restaurantApp{
-          top:0;
-          right:0;
-          width: 35%;
+}
+.runningApp {
+     top:0;
+     left:0;
+}
+.restaurantApp{
+     top:0;
+     right:0;
+     width: 35%;
+}
+.colorApp{
+     bottom:0;
+     right:0;
+}
+.blankApp{
+     bottom:0;
+     left:0;
+     width:35%;
+}
+
+
+@keyframes scaleUp{
+     0%{
+          transform:scale(1)
      }
-     .colorApp{
-          bottom:0;
-          right:0;
+     50%{
+          transform:scale(1.02)
      }
-     .blankApp{
-          bottom:0;
-          left:0;
-          width:35%;
+     100%{
+          transform:scale(1)
      }
 }
 
@@ -69,8 +82,7 @@ section {
      justify-content: center;
      border: 5px solid $headingColor;
      background-color: $secondaryBackground;
-     &.blankText,
-     &.restaurantText{
+     &.blankText{
           img{
                max-width: 60%;
           }
@@ -85,13 +97,24 @@ section {
           border-radius:4px;
           padding: 4px 10px;
      }
+     h3{
+          text-align:center;
+     }
      hr{
           width: 30%;
           border:1px solid $accent;
      }
+     img{
+          max-width: 800px;
+          width:100%;
+     }
      p{
-          max-width: 86%;
+          max-width: 75%;
           margin: 15px auto;
+          color:$headingColor;
+          span{
+               font-style: italic;
+          }
      }
      h4{
           margin-top: 15px;

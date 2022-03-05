@@ -22,7 +22,7 @@ myPortfolio.projectDivs.forEach(function(project){
      project.addEventListener('click', function(e){
           // const source = 'file:///Users/emilyread/Documents/JUNO/BOOTCAMP/portfolio/emilyReadPortfolio/assets/';
           const source="https://emilyreadscode.ca/assets/"
-
+          console.log(e.target.class);
           console.log(e.target.src);
           if(e.target.src == `${source}weatherApp.png`) {
                const runningText = document.querySelector('.runningText');
