@@ -21,18 +21,20 @@ myPortfolio.projectDivs = document.querySelectorAll('.app');
 myPortfolio.projectDivs.forEach(function(project){
      project.addEventListener('click', function(e){
           // const source = 'file:///Users/emilyread/Documents/JUNO/BOOTCAMP/portfolio/emilyReadPortfolio/assets/';
-          // const source="https://emilyreadscode.ca";
-          if (e.target.src == `https://emilyreadscode.ca/assets/weatherApp.png`) {
+          const source="https://emilyreadscode.ca/assets/"
+
+          console.log(e.target.src);
+          if(e.target.src == `${source}weatherApp.png`) {
                const runningText = document.querySelector('.runningText');
                runningText.classList.remove('textContainer');
                runningText.classList.add('appPopUp');
                myPortfolio.closeProjectEvent(runningText);
-          } else if (e.target.src == `https://emilyreadscode.ca"/assets/restaurantApp.png`) {
+          } else if (e.target.src == `${source}restaurantApp.png`) {
                const restaurantText = document.querySelector('.restaurantText');
                restaurantText.classList.remove('textContainer');
                restaurantText.classList.add('appPopUp');
                myPortfolio.closeProjectEvent(restaurantText);
-          } else if (e.target.src == `https://emilyreadscode.ca"/assets/colorApp.png`) {
+          } else if(e.target.src == `${source}colorApp.png`) {
                const colorText = document.querySelector('.colorText');
                colorText.classList.remove('textContainer');
                colorText.classList.add('appPopUp');
