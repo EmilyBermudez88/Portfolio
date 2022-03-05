@@ -2,8 +2,8 @@ const myPortfolio={};
 
 //create initial method to kick off the app
 myPortfolio.init = function(){
-     myPortfolio.arrowEventListener()
-     myPortfolio.formEventListener()
+     myPortfolio.arrowEventListener();
+     myPortfolio.formEventListener();
 }
 
 //create event listener to listen for click of down arrow icon
@@ -15,6 +15,46 @@ myPortfolio.arrowEventListener = function(){
           aboutSection.scrollIntoView({behavior:"smooth"});
      })
 }
+
+//event listeners for each of the project images (to pull up more information)
+myPortfolio.projectDivs = document.querySelectorAll('.app');
+myPortfolio.projectDivs.forEach(function(project){
+     project.addEventListener('click', function(e){
+          const source = 'file:///Users/emilyread/Documents/JUNO/BOOTCAMP/portfolio/emilyReadPortfolio/assets/';
+          if(e.target.src == `${source}weatherApp.png`) {
+               const runningText = document.querySelector('.runningText');
+               runningText.classList.remove('textContainer');
+               runningText.classList.add('appPopUp');
+               myPortfolio.closeProjectEvent(runningText);
+          } else if (e.target.src == `${source}restaurantApp.png`) {
+               const restaurantText = document.querySelector('.restaurantText');
+               restaurantText.classList.remove('textContainer');
+               restaurantText.classList.add('appPopUp');
+               myPortfolio.closeProjectEvent(restaurantText);
+          } else if(e.target.src == `${source}colorApp.png`) {
+               const colorText = document.querySelector('.colorText');
+               colorText.classList.remove('textContainer');
+               colorText.classList.add('appPopUp');
+               myPortfolio.closeProjectEvent(colorText);
+          } else {
+               const blankText = document.querySelector('.blankText');
+               blankText.classList.remove('textContainer');
+               blankText.classList.add('appPopUp');
+               myPortfolio.closeProjectEvent(blankText);
+          };
+     })
+})
+
+myPortfolio.closeProjectEvent = function (clickedElement) {
+     const closeProject = document.querySelectorAll('.projectsContainer i')
+     closeProject.forEach(function(icon){
+          icon.addEventListener('click', function () {
+               clickedElement.classList.remove('addPopUp');
+               clickedElement.classList.add('textContainer');
+          })
+     })     
+}
+
 
 //create event listener to listen for form submit
 myPortfolio.form = document.querySelector('form');
@@ -44,10 +84,3 @@ myPortfolio.formEventListener = function(){
 
 //call the init method
 myPortfolio.init();
-
-
-
-//portfolio section:
-//first is to create a class to setup the basic styling of the pop up (div with width/height, the video container, the text wrapper container)
-//in java, on click of pic, call the class to show, and add in innerhtml for text wrapper, and plug in video, and an x icon at top
-//make an event listener for an 'x' that when clicked, it removes the class and clears the inner html and video src

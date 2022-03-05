@@ -240,9 +240,13 @@ html {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 125%;
-  background-color: #fbfbfb;
+  background-color: #f8f8f8;
 }
 
 img {
@@ -260,7 +264,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #202020;
+  color: #2d2d2d;
   font-family: "Questrial";
 }
 
@@ -311,7 +315,7 @@ a {
   text-decoration: none;
   font-weight: 400;
   padding: 12px 25px;
-  color: #202020;
+  color: #2d2d2d;
   background-color: white;
   -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
@@ -357,12 +361,12 @@ header i {
 }
 
 footer {
-  background-color: #202020;
+  background-color: #2d2d2d;
   padding: 10px 0;
 }
 footer p {
   text-align: center;
-  color: #fbfbfb;
+  color: #f8f8f8;
 }
 footer p span {
   font-size: 1.5rem;
@@ -378,6 +382,106 @@ section {
 }
 .aboutText p:first-child {
   font-weight: 400;
+}
+
+.projectsContainer {
+  position: relative;
+  min-height: 130vh;
+}
+.projectsContainer .app {
+  position: absolute;
+  background-color: #dedede;
+  height: 420px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.projectsContainer .app:hover, .projectsContainer .app:focus {
+  background-color: #FCDE16;
+  cursor: pointer;
+}
+.projectsContainer .app img {
+  max-height: 100%;
+  padding: 50px 0;
+}
+.projectsContainer .runningApp {
+  top: 0;
+  left: 0;
+}
+.projectsContainer .restaurantApp {
+  top: 0;
+  right: 0;
+  width: 35%;
+}
+.projectsContainer .colorApp {
+  bottom: 0;
+  right: 0;
+}
+.projectsContainer .blankApp {
+  bottom: 0;
+  left: 0;
+  width: 35%;
+}
+
+.appPopUp {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid #2d2d2d;
+  background-color: #dedede;
+}
+.appPopUp.blankText img, .appPopUp.restaurantText img {
+  max-width: 60%;
+}
+.appPopUp i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  color: #FCDE16;
+  background-color: #565656;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+.appPopUp hr {
+  width: 30%;
+  border: 1px solid #FCDE16;
+}
+.appPopUp p {
+  max-width: 86%;
+  margin: 15px auto;
+}
+.appPopUp h4 {
+  margin-top: 15px;
+}
+
+.textContainer {
+  display: none;
 }
 
 .skillsContainer {
@@ -450,7 +554,7 @@ section {
   margin: 20px 15px 0 0;
 }
 .socialLinks li a {
-  background-color: #fbfbfb;
+  background-color: #f8f8f8;
   border: none;
   padding: 3px;
   font-size: 2.2rem;

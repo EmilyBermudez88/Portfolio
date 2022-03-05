@@ -4,6 +4,10 @@
      padding:0;
 }
 
+html{
+     scroll-behavior: smooth;
+}
+
 body{
      font-size:125%;
      background-color: $background;
@@ -11,7 +15,7 @@ body{
 
 img {
      display:block;
-     max-width:100%;
+     max-width: 100%;
 }
 
 .wrapper {
