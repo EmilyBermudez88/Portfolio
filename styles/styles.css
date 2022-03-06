@@ -317,13 +317,14 @@ a {
   padding: 12px 25px;
   color: #2d2d2d;
   background-color: white;
-  -webkit-transition: background-color 0.4s;
-  transition: background-color 0.4s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   border: 1px solid black;
 }
-button:hover, button:focus,
+button:hover, button:focus, button:active,
 a:hover,
-a:focus {
+a:focus,
+a:active {
   background-color: #ffe229;
   outline: none;
 }
@@ -345,13 +346,14 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 header h1 {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 header div {
   width: 333px;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 header div h3 {
   color: #f8f8f8;
@@ -363,6 +365,14 @@ header div h3 {
 }
 header div h3 span {
   letter-spacing: 6px;
+}
+header .headerImage {
+  position: absolute;
+  width: 525px;
+  left: 550px;
+}
+header .headerImage img {
+  max-width: 100%;
 }
 header a {
   position: absolute;

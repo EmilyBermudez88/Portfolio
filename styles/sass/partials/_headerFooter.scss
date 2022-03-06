@@ -1,16 +1,16 @@
 header {
      height: 100vh;
-     // background-color: rgb(222, 222, 222);
      background-color: $secondaryAccent;
      display:flex;
      flex-direction: column;
      justify-content: center;
+     position:relative;
      h1{
-          margin-left:15%;
+          margin-left:10%;
      }
      div{
           width: 333px;
-          margin-left:15%;
+          margin-left:10%;
           h3 {
                color:$background;
                overflow:hidden;
@@ -20,6 +20,14 @@ header {
                span{
                     letter-spacing: 6px;
                }
+          }
+     }
+     .headerImage {
+          position:absolute;
+          width: 525px;
+          left: 550px;
+          img{
+               max-width:100%;
           }
      }
      a{
