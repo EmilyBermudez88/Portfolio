@@ -1,4 +1,33 @@
+@media(max-width:1100px){
+     //HEADER
+     header{
+          h1,
+          div{
+               margin-left:5%;
+          }
+          .headerImage{
+               width: 450px;
+               height:191px;
+               left: 400px;
+          }
+     }
+}
+
 @media(max-width:950px){
+     //HEADER
+     header{
+          .headerImage{
+               position:relative;
+               left: 0;
+               margin-top: 40px;
+               height:222px;
+               width: 525px;
+          }
+          h1,
+          div {
+               margin-left: 15%;
+          }
+     }
      //PROJECTS
      .projectsContainer{
           .app{
@@ -12,6 +41,25 @@
 }
 
 @media(max-width:770px){
+     //HEADER
+     header {
+          h1,
+          div{
+               margin-left: 8%;
+          }
+     }
+     //ABOUT
+     .aboutFlexContainer{
+          flex-direction:column;
+     }
+     .selfPortrait{
+          width: 70%;
+          height: 400px;
+          margin: 0 auto 60px auto;
+     }
+     .aboutText {
+          width: 100%;
+     }
      //PROJECTS
      .projectsContainer {
           flex-direction:column;
@@ -50,6 +98,25 @@
      h2{
           font-size: 2rem;
      }
+     //HEADER
+     header{
+          h1,
+          div{
+               margin-left: 5%;
+          }
+          h1{
+               font-size: 3.5rem;
+          }
+          .headerImage {
+               width: 370px;
+               height:157px;
+          }
+     }
+     //ABOUT
+     .selfPortrait {
+          width: calc(100% - 30px);
+          margin-right: 30px;
+     }
      //PROJECTS
      .projectsContainer {
           margin-bottom:0;
@@ -60,9 +127,6 @@
                     max-width: 95%;
                }
           }
-     }
-     .addPopUp{
-          
      }
      //FORM
      .contactFlexContainer{
@@ -79,16 +143,24 @@
 @media(max-width: 430px){
      //HEADER
      header{
+          height: 80vh;
           h1,
           div{
-               width: 308px;
+               width: 300px;
                margin-left: 5%;
                h3{
                     font-size:1.6rem;
                }
           }
+          .headerImage{
+               width: 300px;
+               height: 127px;
+          }
      }
-
+     //ABOUT {
+     .selfPortrait {
+          height: 300px;
+     }
      //PROJECTS
      .projectsContainer{
           height: 500px;

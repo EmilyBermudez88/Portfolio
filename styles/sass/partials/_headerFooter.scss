@@ -26,7 +26,7 @@ header {
           position:absolute;
           height:222px;
           width: 525px;
-          left: 450px;
+          left: 440px;
           overflow:hidden;
           .computer{
                max-width:100%;
@@ -36,7 +36,7 @@ header {
           .screen{
                position:absolute;
                top:0;
-               left:59px;
+               left:11%;
                width: 60%;
                overflow:hidden;
                animation: screen 15s steps(22, end) infinite;
@@ -91,7 +91,7 @@ header {
           top:0
      }
      100%{
-          top:-460px;
+          top:-220%;
      }
 }
 
