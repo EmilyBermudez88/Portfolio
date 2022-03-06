@@ -563,7 +563,7 @@ section:focus {
   cursor: pointer;
 }
 .app img {
-  max-height: 100%;
+  max-width: 85%;
 }
 
 .runningApp,
@@ -669,6 +669,7 @@ section:focus {
 }
 .appPopUp h3 {
   text-align: center;
+  max-width: 75%;
 }
 .appPopUp hr {
   width: 30%;
@@ -688,6 +689,9 @@ section:focus {
 }
 .appPopUp h4 {
   margin-top: 15px;
+}
+.appPopUp div {
+  margin-top: 20px;
 }
 
 .textContainer {
@@ -830,6 +834,40 @@ textarea:focus {
   }
 }
 @media (max-width: 770px) {
+  .projectsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+    height: 750px;
+  }
+  .projectsContainer.secondRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projectsContainer .app {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .popUpContainer {
+    height: 65%;
+    top: 20%;
+  }
+
+  .appPopUp {
+    height: 100%;
+  }
+  .appPopUp h3 {
+    margin-bottom: 15px;
+  }
+  .appPopUp .languages {
+    margin-top: 15px;
+  }
+
   .skill {
     width: 33.3333333333%;
   }
@@ -837,6 +875,17 @@ textarea:focus {
 @media (max-width: 600px) {
   h2 {
     font-size: 2rem;
+  }
+
+  .projectsContainer {
+    margin-bottom: 0;
+    height: 600px;
+  }
+  .projectsContainer .app {
+    margin-bottom: 15px;
+  }
+  .projectsContainer .app img {
+    max-width: 95%;
   }
 
   .contactFlexContainer {
@@ -862,6 +911,29 @@ header div {
   header h1 h3,
 header div h3 {
     font-size: 1.6rem;
+  }
+
+  .projectsContainer {
+    height: 500px;
+  }
+
+  .appPopUp .languages {
+    margin-top: 8px;
+    text-align: center;
+  }
+  .appPopUp h3 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .appPopUp a {
+    display: block;
+    margin-top: 10px;
+  }
+  .appPopUp div {
+    margin-top: 0;
+  }
+  .appPopUp i {
+    font-size: 1.4rem;
   }
 
   .skill {

@@ -42,6 +42,10 @@ myPortfolio.projectDivs.forEach(function(project){
                blankText.classList.add('appPopUp');
                myPortfolio.closeProjectEvent(blankText);
           };
+          const projectOverlay = document.querySelectorAll('.app div');
+          projectOverlay.forEach(function (div) {
+               div.style.backgroundColor = "rgba(50,50,50,0.8)"
+          })
      })
 
      //event listener for tabbing:
@@ -68,8 +72,13 @@ myPortfolio.projectDivs.forEach(function(project){
                blankText.classList.add('appPopUp');
                myPortfolio.closeProjectEvent(blankText);
           };
+          const projectOverlay = document.querySelectorAll('.app div');
+          projectOverlay.forEach(function (div) {
+               div.style.backgroundColor = "rgba(50,50,50,0.8)"
+          })
      })
 })
+
 
 myPortfolio.closeProjectEvent = function (clickedElement) {
      const closeProject = document.querySelectorAll('.popUpContainer i')
@@ -77,12 +86,20 @@ myPortfolio.closeProjectEvent = function (clickedElement) {
           icon.addEventListener('click', function () {
                clickedElement.classList.remove('addPopUp');
                clickedElement.classList.add('textContainer');
+               const projectOverlay = document.querySelectorAll('.app div');
+               projectOverlay.forEach(function (div) {
+                    div.style.backgroundColor = "transparent"
+               })
           })
           icon.addEventListener('keypress', function (e) {
                console.log(e.key);
                if(e.key === 'Enter'){
                clickedElement.classList.remove('addPopUp');
                clickedElement.classList.add('textContainer');
+                    const projectOverlay = document.querySelectorAll('.app div');
+                    projectOverlay.forEach(function (div) {
+                         div.style.backgroundColor = "transparent"
+                    })
                }
           })
      })     

@@ -1,4 +1,5 @@
 @media(max-width:950px){
+     //PROJECTS
      .projectsContainer{
           .app{
                height:380px;
@@ -11,6 +12,34 @@
 }
 
 @media(max-width:770px){
+     //PROJECTS
+     .projectsContainer {
+          flex-direction:column;
+          margin-bottom:0;
+          height: 750px;
+          &.secondRow{
+               flex-direction: column-reverse;
+          }
+          .app{
+               width:100%;
+               margin-bottom: 30px;
+          }
+     }
+     .popUpContainer {
+          height:65%;
+          top: 20%;
+     }
+     .appPopUp{
+          height: 100%;
+          h3{
+               margin-bottom: 15px;
+          }
+          .languages {
+               margin-top: 15px;
+          }
+
+     }
+     
      //SKILLSET
      .skill{
           width: calc(100% / 3);
@@ -20,6 +49,20 @@
 @media(max-width: 600px){
      h2{
           font-size: 2rem;
+     }
+     //PROJECTS
+     .projectsContainer {
+          margin-bottom:0;
+          height: 600px;
+          .app{
+               margin-bottom: 15px;
+               img {
+                    max-width: 95%;
+               }
+          }
+     }
+     .addPopUp{
+          
      }
      //FORM
      .contactFlexContainer{
@@ -34,7 +77,7 @@
      }
 }
 @media(max-width: 430px){
-     //header
+     //HEADER
      header{
           h1,
           div{
@@ -45,10 +88,37 @@
                }
           }
      }
+
+     //PROJECTS
+     .projectsContainer{
+          height: 500px;
+     }
+     .appPopUp{
+          .languages{
+               margin-top: 8px;
+               text-align: center;
+          }
+          h3{
+               font-size: 1.4rem;
+               line-height: 1.8rem;
+          }
+          a{
+               display:block;
+               margin-top: 10px;
+          }
+          div{
+               margin-top:0;
+          }
+          i{
+               font-size:1.4rem;
+          }
+     }
+
      //SKILLSET
      .skill{
           width: calc(100% / 2);
      }
+
      //FOOTER
      footer{
           p{
