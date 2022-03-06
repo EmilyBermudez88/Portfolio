@@ -24,10 +24,22 @@ header {
      }
      .headerImage {
           position:absolute;
+          height:222px;
           width: 525px;
-          left: 550px;
-          img{
+          left: 450px;
+          overflow:hidden;
+          .computer{
                max-width:100%;
+               z-index:10;
+               position:absolute;
+          }
+          .screen{
+               position:absolute;
+               top:0;
+               left:59px;
+               width: 60%;
+               overflow:hidden;
+               animation: screen 15s steps(22, end) infinite;
           }
      }
      a{
@@ -73,17 +85,15 @@ header {
           border-right: 4px solid transparent;
      }
 }
-//   animation: 
-//     typing 3.5s steps(30, end),
-//     blink-caret .5s step-end infinite;
-// }
 
-
-// /* The typewriter cursor effect */
-// @keyframes blink-caret {
-//   from, to { border-color: transparent }
-//   50% { border-color: orange }
-// }
+@keyframes screen {
+     0% {
+          top:0
+     }
+     100%{
+          top:-460px;
+     }
+}
 
 @keyframes arrow{
      0%{

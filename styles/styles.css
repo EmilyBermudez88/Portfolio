@@ -368,11 +368,24 @@ header div h3 span {
 }
 header .headerImage {
   position: absolute;
+  height: 222px;
   width: 525px;
-  left: 550px;
+  left: 450px;
+  overflow: hidden;
 }
-header .headerImage img {
+header .headerImage .computer {
   max-width: 100%;
+  z-index: 10;
+  position: absolute;
+}
+header .headerImage .screen {
+  position: absolute;
+  top: 0;
+  left: 59px;
+  width: 60%;
+  overflow: hidden;
+  -webkit-animation: screen 15s steps(22, end) infinite;
+          animation: screen 15s steps(22, end) infinite;
 }
 header a {
   position: absolute;
@@ -432,6 +445,22 @@ header a i {
   }
   100% {
     border-right: 4px solid transparent;
+  }
+}
+@-webkit-keyframes screen {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -460px;
+  }
+}
+@keyframes screen {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -460px;
   }
 }
 @-webkit-keyframes arrow {
