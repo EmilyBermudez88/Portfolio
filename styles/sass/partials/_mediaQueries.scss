@@ -10,3 +10,54 @@
      }
 }
 
+@media(max-width:770px){
+     //SKILLSET
+     .skill{
+          width: calc(100% / 3);
+     }
+}
+
+@media(max-width: 600px){
+     h2{
+          font-size: 2rem;
+     }
+     //FORM
+     .contactFlexContainer{
+          flex-direction:column;
+          .contactText{
+               width:100%;
+               margin-bottom:30px;
+          }
+          .contactForm{
+               width: 100%;
+          }
+     }
+}
+@media(max-width: 430px){
+     //header
+     header{
+          h1,
+          div{
+               width: 308px;
+               margin-left: 5%;
+               h3{
+                    font-size:1.6rem;
+               }
+          }
+     }
+     //SKILLSET
+     .skill{
+          width: calc(100% / 2);
+     }
+     //FOOTER
+     footer{
+          p{
+               width: 300px;
+               margin: 0 auto;
+               span{
+                    display:none;
+               }
+          }
+     }
+}
+

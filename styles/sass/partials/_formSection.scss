@@ -10,6 +10,15 @@
      }
 }
 
+.contactText{
+     p{
+          margin-bottom: 10px;
+          &:first-child{
+               text-transform: uppercase;
+               color:$headingColor;
+          }
+     }
+}
 .socialLinks{
      display:flex;
      flex-direction:row;

@@ -1,5 +1,8 @@
 section {
      margin-bottom: 50px;
+     &:focus{
+          outline: none;
+     }
 }
 
 //ABOUT SECTION
