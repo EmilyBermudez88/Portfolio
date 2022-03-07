@@ -1,3 +1,9 @@
+.contact{
+     .wrapper {
+          position:relative;
+     }
+}
+
 .contactFlexContainer {
      display:flex;
      flex-direction:row;
@@ -74,5 +80,11 @@ textarea{
           border:1px solid $accent;
           outline:none;
           background-color: #f9f9f9;
+     }
+}
+
+.contact{
+     .decoration{
+          top: -40px;
      }
 }
