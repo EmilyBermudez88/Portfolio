@@ -1,23 +1,23 @@
 section {
      margin-bottom: 50px;
-     &:focus{
-          outline: none;
-     }
+     // &:focus{
+     //      outline: none;
+     // }
 }
 .decoration {
      position:absolute;
-     width: 120px;
+     width: 80px;
      z-index:-10;
      left: -3%;
      img{
           max-width:100%;
-          opacity:0.3;
+          // opacity:0.3;
      }
 }
 .about {
      .decoration{
           right:30px;
-          top:-10px;
+          top:-18px;
      }
 }
 
@@ -43,6 +43,7 @@ section {
      h3{
           margin-top: 30%;
           margin-left: 5%;
+          color: $textColor;
      }
 }
 .aboutText {
@@ -51,8 +52,19 @@ section {
           margin-bottom: 15px;
           &:first-child{
                font-weight:400;
+               font-size: 1.2rem;
+               color:#696969;
           }
      }
+}
+
+.dots {
+     position:absolute;
+     right:0;
+     top:15px;
+     z-index:-10;
+     width: 400px;
+     opacity:0.7;
 }
 
 //PORTFOLIO SECTION
@@ -200,6 +212,10 @@ section {
 }
 
 //SKILLSET SECTION
+.skillset{
+     background-color: $secondaryAccent;
+     padding: 30px 0;
+}
 .skillsContainer {
      display:flex;
      flex-direction:row;
@@ -214,6 +230,10 @@ section {
      height: 93px;
      width: calc((100% / 4));
      margin-bottom: 30px;
+     p,
+     i{
+          color:$headingColor;
+     }
      i{
           font-size:3.5rem;
           transition: 0.3s;

@@ -85,6 +85,15 @@ textarea{
 
 .contact{
      .decoration{
-          top: -40px;
+          top: -20px;
      }
+}
+
+.dots2{
+     position:absolute;
+     top:0;
+     right:-20px;
+     z-index: -10;
+     width:450px;
+     opacity:0.8;
 }
