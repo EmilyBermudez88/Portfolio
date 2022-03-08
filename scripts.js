@@ -4,6 +4,7 @@ const myPortfolio={};
 myPortfolio.init = function(){
      // myPortfolio.arrowEventListener();
      myPortfolio.formEventListener();
+     AOS.init();
 }
 
 // //create event listener to listen for click of down arrow icon

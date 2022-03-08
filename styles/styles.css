@@ -860,15 +860,15 @@ section {
 }
 
 .contactForm p {
-  display: none;
+  opacity: 0;
   margin-top: 10px;
   text-transform: uppercase;
-  font-size: 0.7rem;
-}
-.contactForm .thankYouDisplay {
-  display: block;
+  font-size: 0.8rem;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+}
+.contactForm .thankYouDisplay {
+  opacity: 1;
 }
 .contactForm button:focus {
   outline: none;
