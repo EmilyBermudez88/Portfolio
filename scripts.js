@@ -130,6 +130,9 @@ myPortfolio.formEventListener = function(){
           setTimeout(()=> {
                thankYouMessage.classList.remove("thankYouDisplay")
           }, 2000);
+
+          
+
      })
 }
 

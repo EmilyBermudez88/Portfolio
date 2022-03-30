@@ -802,6 +802,9 @@ section {
   color: #fde651;
 }
 
+.contact {
+  margin-bottom: 35px;
+}
 .contact .wrapper {
   position: relative;
 }
