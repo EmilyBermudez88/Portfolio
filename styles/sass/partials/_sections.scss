@@ -88,11 +88,12 @@ section {
      width:60%;
      display:flex;
      align-items: center;
-     justify-content: center;
+     justify-content: space-evenly;
      transition: 0.4s;
      overflow:hidden;
      z-index:10;
      position:relative;
+     transition: width 1s;
      &:hover,
      &:focus,
      &:active {
@@ -100,10 +101,12 @@ section {
           background-color: $accent;
           cursor:pointer;
      }
+     //max width set to 85% before hover:
      img{
-          max-width: 85%;        
+          max-width: 40%;        
      }
 }
+//before hover is 60% - on hover is 90 or 100%
 .runningApp,
 .colorApp {
      width: 60%;
@@ -112,7 +115,40 @@ section {
 .restaurantApp {
      width:35%;
 }
+hr{
+     width: 90%;
+     margin: 10px auto;
+}
+.runningText{
+     width: 50%;
+     padding: 8px 0;
+     position:relative;
+     h3 {
+          font-size: 1.4rem;
+          text-align:center;
+     }
+     p {
+          width: 90%;
+          margin: 10px auto;
+     }
+     .links {
+          margin-top: 20px;
+          display:flex;
+          justify-content: space-evenly;
+          z-index:30;
+          position:relative;
+     }
+     i {
+          position:absolute;
+          top:0;
+          right:0;
+          z-index: 30
+     }
+}
 
+.textContainer {
+     display:none;
+}
 
 @keyframes scaleUp{
      0%{
@@ -132,81 +168,79 @@ section {
 .overlay4 {
      width:100%;
      height:100%;
-     z-index:30;
+     z-index:20;
      position:absolute;
      &:focus{
           border:2px solid black;
      }
 }
 
-.popUpContainer {
-     position:absolute;
-     height:100%;
-     width:100%;
-     top:70px;
-}
-.appPopUp {
-     display:block;
-     width: 100%;
-     height:calc(100% - 70px);
-     padding: 10px 0;
-     z-index: 20;
-     position:absolute;
-     display:flex;
-     flex-direction:column;
-     align-items: center;
-     justify-content: center;
-     border: 5px solid $headingColor;
-     background-color: $secondaryBackground;
-     &.blankText{
-          img{
-               max-width: 60%;
-          }
-     }
-     i{
-          position:absolute;
-          top: 15px;
-          right: 15px;
-          font-size: 2rem;
-          color:$accent;
-          background-color: #565656;
-          border-radius:4px;
-          padding: 4px 10px;
-          &:focus{
-               border:2px solid $accent;
-          }
-     }
-     h3{
-          text-align:center;
-          max-width: 75%;
-     }
-     hr{
-          width: 30%;
-          border:1px solid $accent;
-     }
-     img{
-          max-width: 950px;
-          width:100%;
-     }
-     p{
-          max-width: 75%;
-          color:$headingColor;
-          margin: 10px auto;
-          span{
-               font-style: italic;
-          }
-     }
-     h4{
-          margin-top: 15px;
-     }
-     div{
-          margin-top: 20px;
-     }
-}
 
-.textContainer {
-     display:none;
-}
+// .popUpContainer {
+//      position:absolute;
+//      height:100%;
+//      width:100%;
+//      top:70px;
+// }
+// .appPopUp {
+//      display:block;
+//      width: 100%;
+//      height:calc(100% - 70px);
+//      padding: 10px 0;
+//      z-index: 20;
+//      position:absolute;
+//      display:flex;
+//      flex-direction:column;
+//      align-items: center;
+//      justify-content: center;
+//      border: 5px solid $headingColor;
+//      background-color: $secondaryBackground;
+//      &.blankText{
+//           img{
+//                max-width: 60%;
+//           }
+//      }
+//      i{
+//           position:absolute;
+//           top: 15px;
+//           right: 15px;
+//           font-size: 2rem;
+//           color:$accent;
+//           background-color: #565656;
+//           border-radius:4px;
+//           padding: 4px 10px;
+//           &:focus{
+//                border:2px solid $accent;
+//           }
+//      }
+//      h3{
+//           text-align:center;
+//           max-width: 75%;
+//      }
+//      hr{
+//           width: 30%;
+//           border:1px solid $accent;
+//      }
+//      img{
+//           max-width: 950px;
+//           width:100%;
+//      }
+//      p{
+//           max-width: 75%;
+//           color:$headingColor;
+//           margin: 10px auto;
+//           span{
+//                font-style: italic;
+//           }
+//      }
+//      h4{
+//           margin-top: 15px;
+//      }
+//      div{
+//           margin-top: 20px;
+//      }
+// }
+
 
 //SKILLSET SECTION
 .skillset{
