@@ -621,18 +621,35 @@ section {
   background-color: #f4e060;
   cursor: pointer;
 }
-.app img {
-  max-width: 40%;
+
+.blankApp,
+.restaurantApp {
+  width: 35%;
+}
+.blankApp img,
+.restaurantApp img {
+  max-width: 220px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tabletWidth {
+  width: 35%;
 }
 
 .runningApp,
 .colorApp {
   width: 60%;
 }
+.runningApp img,
+.colorApp img {
+  max-width: 350px;
+  -o-object-position: contain;
+     object-position: contain;
+}
 
-.blankApp,
-.restaurantApp {
-  width: 35%;
+.laptopWidth {
+  width: 60%;
 }
 
 hr {
@@ -640,20 +657,24 @@ hr {
   margin: 10px auto;
 }
 
-.runningText {
-  width: 50%;
+.appText {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(45, 45, 45, 0.9);
   padding: 8px 0;
   position: relative;
 }
-.runningText h3 {
+.appText h3 {
   font-size: 1.4rem;
   text-align: center;
+  color: white;
 }
-.runningText p {
+.appText p {
   width: 90%;
   margin: 10px auto;
+  color: #f8f8f8;
 }
-.runningText .links {
+.appText .links {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,14 +685,14 @@ hr {
   z-index: 30;
   position: relative;
 }
-.runningText i {
+.appText i {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 30;
 }
 
-.textContainer {
+.hideText {
   display: none;
 }
 
@@ -712,6 +733,15 @@ hr {
   height: 100%;
   z-index: 20;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .overlay1:focus,
 .overlay2:focus,

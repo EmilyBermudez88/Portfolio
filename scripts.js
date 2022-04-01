@@ -13,65 +13,68 @@ myPortfolio.init = function(){
 
 //event listeners for each of the project images (to pull up more information)
 myPortfolio.projectDivs = document.querySelectorAll('.app');
-myPortfolio.projectDivs.forEach(function(project){
-     project.addEventListener('click', function(e){
+myPortfolio.projectDivs.forEach((project)=>{
+     project.addEventListener('click', (e)=>{
           //textContainer here is a display:none property
           //inside each IF, can we call a function that deals with all of the stuff below- can we pass it 2 arguments: runningApp and runningText? 
           if(e.target.className==="overlay1") {
                const runningText = document.querySelector('.runningText');
-               const runningApp = document.querySelector('.runningApp');
-               //below will also need to be added in to the remove event as well!
-               runningApp.style.width="100%";
-               runningApp.style.transition="1s";
-               runningText.classList.remove('textContainer');
+               myPortfolio.focusedProject(runningText);
                myPortfolio.closeProjectEvent(runningText);
-          }
-          // } else if (e.target.className==="overlay2") {
-          //      const restaurantText = document.querySelector('.restaurantText');
-          //      restaurantText.classList.remove('textContainer');
-          //      restaurantText.classList.add('appPopUp');
-          //      myPortfolio.closeProjectEvent(restaurantText);
-          // } else if(e.target.className==="overlay4") {
-          //      const colorText = document.querySelector('.colorText');
-          //      colorText.classList.remove('textContainer');
-          //      colorText.classList.add('appPopUp');
-          //      myPortfolio.closeProjectEvent(colorText);
-          // } else {
-          //      const blankText = document.querySelector('.blankText');
-          //      blankText.classList.remove('textContainer');
-          //      blankText.classList.add('appPopUp');
-          //      myPortfolio.closeProjectEvent(blankText);
-          // };
-          // const projectOverlay = document.querySelectorAll('.app div');
-          // projectOverlay.forEach(function (div) {
-          //      div.style.backgroundColor = "rgba(50,50,50,0.8)"
-          // })
+          } else if (e.target.className==="overlay2") {
+               const restaurantText = document.querySelector('.restaurantText');
+               const restaurantApp = document.querySelector('.restaurantApp')
+               myPortfolio.focusedProject(restaurantApp, restaurantText);
+               myPortfolio.closeProjectEvent(restaurantText);
+          } else if(e.target.className==="overlay4") {
+               const colorText = document.querySelector('.colorText');
+               const colorApp = document.querySelector('.colorApp')
+               myPortfolio.focusedProject(colorApp, colorText);
+               myPortfolio.closeProjectEvent(colorText);
+          } else if (e.target.className === "overlay3"){
+               const blankText = document.querySelector('.blankText');
+               const blankApp = document.querySelector('.blankApp')
+               myPortfolio.focusedProject(blankApp, blankText);
+               myPortfolio.closeProjectEvent(blankText);
+          };
      })
 })
 
-//close function doesn't work now because of changing layout- so needed to change popUpContainer i to textContainer i
+myPortfolio.focusedProject = function(textParam){
+     // appParam.style.width = "100%";
+     // appParam.style.transition = "1s";
+     textParam.classList.remove('hideText');
+}
+
+//Event Listener to close text on click
 myPortfolio.closeProjectEvent = function (clickedElement) {
-     console.log(clickedElement);
-     const closeProject = document.querySelector(`.fa-xmark`)
-     console.log(closeProject);
-     closeProject.addEventListener('click', function(){
-          console.log("goodbye");
-          clickedElement.classList.remove('addPopUp');
-          clickedElement.classList.add('textContainer');
-     })
-     closeProject.addEventListener('keypress', function(e){
-          console.log(e.key);
-          if(e.key === 'Enter'){
-          clickedElement.classList.remove('addPopUp');
-          clickedElement.classList.add('textContainer');
-          }
+     const closeProject = document.querySelectorAll(`.fa-xmark`);
+     const parentDiv = clickedElement.parentElement
+     closeProject.forEach((icon)=> {
+          icon.addEventListener('click', ()=>{
+               clickedElement.classList.add('hideText');
+               //need to restore original width of 
+               // if(clickedElement.classList[0] == "runningText" || clickedElement.classList[0]=="colorText"){
+               //      parentDiv.style.width="60%"
+               // } else if (clickedElement.classList[0] == "restaurantText" || clickedElement.classList[0] == "blankText"){
+               //      parentDiv.style.width="35%";
+               // }
+          })
+          icon.addEventListener('keypress', (e)=> {
+               if (e.key === 'Enter'){
+               clickedElement.classList.add('hideText');
+                    // if (clickedElement.classList[0] == "runningText" || clickedElement.classList[0] == "colorText") {
+                    //      parentDiv.style.width = "60%"
+                    // } else if (clickedElement.classList[0] == "restaurantText" || clickedElement.classList[0] == "blankText") {
+                    //      parentDiv.style.width = "35%";
+                    // }
+               }
+          })
      })
 }    
 
 
-
 myPortfolio.form = document.getElementById("my-form");
-
 async function handleSubmit(event) {
      event.preventDefault();
      const status = document.getElementById("status");
@@ -84,7 +87,6 @@ async function handleSubmit(event) {
                'Accept': 'application/json'
           }
      }).then(response => {
-          // console.log(response);
           if (response.ok) {
                status.innerHTML = "Thanks for reaching out!";
                myPortfolio.form.reset();
