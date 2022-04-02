@@ -46,7 +46,7 @@
      }
 }
 
-@media(max-width:770px){
+@media(max-width:840px){
      //HEADER
      header {
           h1,
@@ -83,20 +83,6 @@
                width:100%;
                margin-bottom: 30px;
           }
-     }
-     .popUpContainer {
-          height:65%;
-          top: 20%;
-     }
-     .appPopUp{
-          height: 100%;
-          h3{
-               margin-bottom: 15px;
-          }
-          .languages {
-               margin-top: 15px;
-          }
-
      }
      
      //SKILLSET
@@ -200,26 +186,26 @@
      .projectsContainer{
           height: 500px;
      }
-     .appPopUp{
-          .languages{
-               margin-top: 8px;
-               text-align: center;
-          }
-          h3{
-               font-size: 1.4rem;
-               line-height: 1.8rem;
-          }
-          a{
-               display:block;
-               margin-top: 10px;
-          }
-          div{
-               margin-top:0;
-          }
-          i{
-               font-size:1.4rem;
-          }
-     }
+     // .appPopUp{
+     //      .languages{
+     //           margin-top: 8px;
+     //           text-align: center;
+     //      }
+     //      h3{
+     //           font-size: 1.4rem;
+     //           line-height: 1.8rem;
+     //      }
+     //      a{
+     //           display:block;
+     //           margin-top: 10px;
+     //      }
+     //      div{
+     //           margin-top:0;
+     //      }
+     //      i{
+     //           font-size:1.4rem;
+     //      }
+     // }
 
      //SKILLSET
      .skill{
