@@ -66,9 +66,6 @@ section {
 
 //PORTFOLIO SECTION
 .projects {
-     .wrapper {
-          position:relative;
-     }
      .findOutMore {
           margin-bottom:15px;
      }
@@ -85,7 +82,6 @@ section {
      background-color:$secondaryBackground;
      border-radius: 5px;
      height: 420px;
-     width:60%;
      display:flex;
      align-items: center;
      justify-content: space-evenly;
@@ -93,7 +89,6 @@ section {
      overflow:hidden;
      z-index:10;
      position:relative;
-     transition: width 1s;
      &:hover,
      &:focus,
      &:active {
@@ -101,46 +96,39 @@ section {
           background-color: $accent;
           cursor:pointer;
      }
-     //max width set to 85% before hover:
-     // img{
-     //      max-width: 45%;        
-     // }
+     img{
+          max-width: 85%;   
+          object-fit: contain;     
+     }
 }
 //before hover is 60% - on hover is 90 or 100%
 .blankApp,
 .restaurantApp {
-     width:35%;
-     img {
-          max-width: 220px;
-          object-fit:contain;
+     width:40%;
+     img{
+          max-width: 60%;
      }
-}
-
-.tabletWidth {
-     width: 35%;
 }
 .runningApp,
 .colorApp {
-     width: 60%;
-     img {
-          max-width: 350px;
-          object-position: contain;
-     }
+     width: 55%;
 } 
-.laptopWidth {
-     width: 60%
-}
 
 hr{
      width: 90%;
      margin: 10px auto;
 }
 .appText{
-     width: 90%;
+     width: 100%;
+     height:100%;
      margin: 0 auto;
      background-color: rgba($headingColor,0.9);
-     padding: 8px 0;
-     position:relative;
+     padding: 10px;
+     position:absolute;
+     display:flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
      h3 {
           font-size: 1.4rem;
           text-align:center;
@@ -148,8 +136,10 @@ hr{
      }
      p {
           width: 90%;
-          margin: 10px auto;
           color: $background;
+          &.languages {
+               margin: 5px 0;
+          }
      }
      .links {
           margin-top: 20px;
@@ -160,9 +150,20 @@ hr{
      }
      i {
           position:absolute;
-          top:0;
-          right:0;
-          z-index: 30
+          top:10px;
+          right:10px;
+          z-index: 30;
+          color: $accent;
+          font-size: 30px;
+          transition: 0.4s;
+          &:hover,
+          &:focus {
+               color:$background;
+               transform: rotate(180deg);
+          }
+     }
+     hr{
+          margin:0;
      }
 }
 

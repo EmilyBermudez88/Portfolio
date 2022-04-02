@@ -56,8 +56,8 @@
                     <h2>What I've made</h2>
                     <p class="findOutMore">(click on any projects below to explore further)</p>
 
-                    <div class="projectsContainer">
-                         <div class="app runningApp" aos-init  data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
+                    <ul class="projectsContainer">
+                         <li class="app runningApp" aos-init  data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
                               <img src="./assets/weatherAppLaptop.png" alt="laptop with homescreen for Weather to Run or Not" class="runningImage">
                               
                               <div class="overlay1" tabindex="0">
@@ -65,8 +65,7 @@
                                         <h3>Weather to Run</h3>
                                         <hr>
                                         <p class="languages">JavaScript | REST API | HTML5 | CSS3 | SASS</p>
-                                        <p>A running app that helps users decide how to dress in varying weather conditions based on their current
-                                             location. Weather comes from the <span>Visual Crossing API</span>.</p>
+                                        <p>A running app that helps users decide how to dress for their run in varying weather conditions based on their current location.</p>
                                         <div class="links">
                                              <a href="https://emilyreadscode.ca/weather-to-run" target="_blank" rel="noopener noreferrer" tabindex="0">Live
                                                   Site</a>
@@ -76,60 +75,68 @@
                                         <i class="fa-solid fa-xmark" tabindex="0"></i>
                                    </div> <!-- runningText end -->
                               </div>  <!-- overlay end -->
-                         </div> <!-- runningApp end -->
+                         </li> <!-- runningApp end -->
 
-                         <div class="app restaurantApp" aos-init  data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
+                         <li class="app restaurantApp" aos-init  data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
                               <img src="./assets/restaurantAppTablet.png" alt="tablet with homescreen for Restaurant Mall">
-                              <div class="overlay2" tabindex="0"></div>
-
-                              <div class="restaurantText appText hideText">
-                                   <h3>Restaurant Mall</h3>
-                                   <hr>
-                                   <p class="languages">HTML5 | CSS3 | SASS</p>
-                                   <p>A multi-page PSD conversion using a style guide and design files provided by a client. Flexbox used to create a
-                                        fully responsive site.</p>
-                                   <div class="links">
-                                        <a href="https://emilyreadscode.ca/restaurant-mall" target="_blank" rel="noopener noreferrer"
-                                             tabindex="0">Live Site</a>
-                                        <a href="https://github.com/EmilyRead88/Restaurant-Mall" target="_blank" rel="noopener noreferrer"
-                                             tabindex="0">GitHub</a>
-                                   </div>
-                                   <i class="fa-solid fa-xmark" tabindex="0"></i>
-                              </div><!-- restaurantText end -->
-                         </div> <!-- restaurantApp end -->
-                    </div> <!-- projectsContainer end-->
+                              <div class="overlay2" tabindex="0">
+                                   <div class="restaurantText appText hideText">
+                                        <h3>Restaurant Mall</h3>
+                                        <hr>
+                                        <p class="languages">HTML5 | CSS3 | SASS</p>
+                                        <p>A multi-page PSD conversion using a style guide and design files provided by a client. Flexbox used to create a
+                                             fully responsive site.</p>
+                                        <div class="links">
+                                             <a href="https://emilyreadscode.ca/restaurant-mall" target="_blank" rel="noopener noreferrer"
+                                                  tabindex="0">Live Site</a>
+                                             <a href="https://github.com/EmilyRead88/Restaurant-Mall" target="_blank" rel="noopener noreferrer"
+                                                  tabindex="0">GitHub</a>
+                                        </div>
+                                        <i class="fa-solid fa-xmark" tabindex="0"></i>
+                                   </div><!-- restaurantText end -->
+                              </div> <!-- overlay2 end -->
+                         </li> <!-- restaurantApp end -->
+                    </ul> <!-- projectsContainer end-->
                     
-                    <div class="projectsContainer">
-                         <div class="app appText blankApp" aos-init  data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
+                    <ul class="projectsContainer secondRow">
+                         <li class="app blankApp" aos-init  data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
                               <img src="./assets/tablet.png" alt="">
-                              <div class="overlay3" tabindex="0"></div>
-                              <div class="blankText hideText">
-                                   <i class="fa-solid fa-xmark" tabindex="0"></i>
-                                   <h3>COMING SOON</h3>
-                              </div> <!-- blankText end -->
-                         </div> 
-                         <!-- blankApp end -->
+                              <div class="overlay3" tabindex="0">
+                                   <div class="blankText appText hideText">
+                                        <h3>Haikus Highway</h3>
+                                        <hr>
+                                        <p class="languages">React | Firebase | REST API | HTML5 | CSS3</p>
+                                        <p>A poetry app that users can create and save their own 3-line haikus with suggested next words.</p>
+                                        <div>
+                                             <a href="https://emilyreadscode.ca/haikus-highway" target="_blank" rel="noopener noreferrer" tabindex="0">Live
+                                                  Site</a>
+                                             <a href="https://github.com/EmilyRead88/Colour-Your-World" target="_blank" rel="noopener noreferrer"
+                                                  tabindex="0">GitHub</a>
+                                        </div>
+                                        <i class="fa-solid fa-xmark" tabindex="0"></i>
+                                   </div> <!-- blankText end -->
+                              </div> <!-- overlay3 end -->
+                         </li> <!-- blankApp end -->
                     
-                         <div class="app colorApp" aos-init  data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
+                         <li class="app colorApp" aos-init  data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
                               <img src="./assets/colorAppLaptop.png" alt="laptop with homescreen for Colour Your World">
-                              <div class="overlay4" tabindex="0"></div>
-
-                              <div class="colorText appText hideText">
-                                   <h3>Colour Your World</h3>
-                                   <hr>
-                                   <p class="languages">JavaScript | REST API | jQuery | HTML5 | CSS3</p>
-                                   <p>A colour app that allows users to create and visualize a variety of palettes based on their colour choice.
-                                        Palettes come from <span>The Color Api.</span></p>
-                                   <div>
-                                        <a href="https://emilyreadscode.ca/color-your-world" target="_blank" rel="noopener noreferrer"
-                                             tabindex="0">Live Site</a>
-                                        <a href="https://github.com/EmilyRead88/Colour-Your-World" target="_blank" rel="noopener noreferrer"
-                                             tabindex="0">GitHub</a>
-                                   </div>
-                                   <i class="fa-solid fa-xmark" tabindex="0"></i> 
-                              </div> <!-- colorText end -->
-                         </div> <!-- colourApp end -->
-                    </div> <!-- projectsContainer end -->
+                              <div class="overlay4" tabindex="0">
+                                   <div class="colorText appText hideText">
+                                        <h3>Games Night</h3>
+                                        <hr>
+                                        <p class="languages">React | REST API | HTML5 | CSS3</p>
+                                        <p>An e-commerce site that generates suggested games based on user selections, and allows users to add / remove items from their cart. </p>
+                                        <div>
+                                             <a href="https://emilyreadscode.ca/games-night" target="_blank" rel="noopener noreferrer"
+                                                  tabindex="0">Live Site</a>
+                                             <a href="https://github.com/EmilyRead88/Colour-Your-World" target="_blank" rel="noopener noreferrer"
+                                                  tabindex="0">GitHub</a>
+                                        </div>
+                                        <i class="fa-solid fa-xmark" tabindex="0"></i> 
+                                   </div>  <!-- colorText end -->
+                              </div><!-- overlay4 end -->
+                         </li> <!-- colourApp end -->
+                    </ul> <!-- projectsContainer end -->
                </div>   <!-- wrapper end -->               
           </section>
 
@@ -245,5 +252,7 @@
 
      <script src="scripts.js"></script>
      
+     <!-- COLOR APP DESCRIPTION: -->
+     <!-- A colour app that allows users to create and visualize a variety of palettes based on their colour choice.Palettes come from <span>The Color Api.</span> -->
 </body>
 </html>

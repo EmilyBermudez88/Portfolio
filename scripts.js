@@ -19,32 +19,23 @@ myPortfolio.projectDivs.forEach((project)=>{
           //inside each IF, can we call a function that deals with all of the stuff below- can we pass it 2 arguments: runningApp and runningText? 
           if(e.target.className==="overlay1") {
                const runningText = document.querySelector('.runningText');
-               myPortfolio.focusedProject(runningText);
+               runningText.classList.remove('hideText');
                myPortfolio.closeProjectEvent(runningText);
           } else if (e.target.className==="overlay2") {
                const restaurantText = document.querySelector('.restaurantText');
-               const restaurantApp = document.querySelector('.restaurantApp')
-               myPortfolio.focusedProject(restaurantApp, restaurantText);
+               restaurantText.classList.remove('hideText')
                myPortfolio.closeProjectEvent(restaurantText);
           } else if(e.target.className==="overlay4") {
                const colorText = document.querySelector('.colorText');
-               const colorApp = document.querySelector('.colorApp')
-               myPortfolio.focusedProject(colorApp, colorText);
+               colorText.classList.remove('hideText')
                myPortfolio.closeProjectEvent(colorText);
           } else if (e.target.className === "overlay3"){
                const blankText = document.querySelector('.blankText');
-               const blankApp = document.querySelector('.blankApp')
-               myPortfolio.focusedProject(blankApp, blankText);
+               blankText.classList.remove('hideText')
                myPortfolio.closeProjectEvent(blankText);
           };
      })
 })
-
-myPortfolio.focusedProject = function(textParam){
-     // appParam.style.width = "100%";
-     // appParam.style.transition = "1s";
-     textParam.classList.remove('hideText');
-}
 
 //Event Listener to close text on click
 myPortfolio.closeProjectEvent = function (clickedElement) {
@@ -53,21 +44,10 @@ myPortfolio.closeProjectEvent = function (clickedElement) {
      closeProject.forEach((icon)=> {
           icon.addEventListener('click', ()=>{
                clickedElement.classList.add('hideText');
-               //need to restore original width of 
-               // if(clickedElement.classList[0] == "runningText" || clickedElement.classList[0]=="colorText"){
-               //      parentDiv.style.width="60%"
-               // } else if (clickedElement.classList[0] == "restaurantText" || clickedElement.classList[0] == "blankText"){
-               //      parentDiv.style.width="35%";
-               // }
           })
           icon.addEventListener('keypress', (e)=> {
                if (e.key === 'Enter'){
                clickedElement.classList.add('hideText');
-                    // if (clickedElement.classList[0] == "runningText" || clickedElement.classList[0] == "colorText") {
-                    //      parentDiv.style.width = "60%"
-                    // } else if (clickedElement.classList[0] == "restaurantText" || clickedElement.classList[0] == "blankText") {
-                    //      parentDiv.style.width = "35%";
-                    // }
                }
           })
      })
