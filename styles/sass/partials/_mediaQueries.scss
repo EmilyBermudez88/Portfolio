@@ -46,7 +46,7 @@
      }
 }
 
-@media(max-width:840px){
+@media(max-width:845px){
      //HEADER
      header {
           h1,
@@ -134,7 +134,7 @@
      //PROJECTS
      .projectsContainer {
           margin-bottom:0;
-          height: 600px;
+          height: 800px;
           .app{
                margin-bottom: 15px;
                img {
@@ -182,30 +182,6 @@
      .selfPortrait {
           height: 300px;
      }
-     //PROJECTS
-     .projectsContainer{
-          height: 500px;
-     }
-     // .appPopUp{
-     //      .languages{
-     //           margin-top: 8px;
-     //           text-align: center;
-     //      }
-     //      h3{
-     //           font-size: 1.4rem;
-     //           line-height: 1.8rem;
-     //      }
-     //      a{
-     //           display:block;
-     //           margin-top: 10px;
-     //      }
-     //      div{
-     //           margin-top:0;
-     //      }
-     //      i{
-     //           font-size:1.4rem;
-     //      }
-     // }
 
      //SKILLSET
      .skill{
@@ -231,3 +207,14 @@
      }
 }
 
+@media(max-width: 350px){
+     .appText{
+          p {
+               font-size: 0.9rem;
+          }
+          a{
+               font-size: 0.9rem;
+               padding: 10px 20px; 
+          }
+     }
+}
