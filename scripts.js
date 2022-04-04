@@ -15,8 +15,6 @@ myPortfolio.init = function(){
 myPortfolio.projectDivs = document.querySelectorAll('.app');
 myPortfolio.projectDivs.forEach((project)=>{
      project.addEventListener('click', (e)=>{
-          //textContainer here is a display:none property
-          //inside each IF, can we call a function that deals with all of the stuff below- can we pass it 2 arguments: runningApp and runningText? 
           if(e.target.className==="overlay1") {
                const runningText = document.querySelector('.runningText');
                runningText.classList.remove('hideText');
@@ -26,15 +24,38 @@ myPortfolio.projectDivs.forEach((project)=>{
                restaurantText.classList.remove('hideText')
                myPortfolio.closeProjectEvent(restaurantText);
           } else if(e.target.className==="overlay4") {
-               const colorText = document.querySelector('.colorText');
-               colorText.classList.remove('hideText')
-               myPortfolio.closeProjectEvent(colorText);
+               const gameText = document.querySelector('.gameText');
+               gameText.classList.remove('hideText')
+               myPortfolio.closeProjectEvent(gameText);
           } else if (e.target.className === "overlay3"){
-               const blankText = document.querySelector('.blankText');
-               blankText.classList.remove('hideText')
-               myPortfolio.closeProjectEvent(blankText);
+               const poemText = document.querySelector('.poemText');
+               poemText.classList.remove('hideText')
+               myPortfolio.closeProjectEvent(poemText);
           };
      })
+     project.addEventListener('keypress', (e) => {
+          if(e.key === 'Enter'){
+               if (e.target.className === "overlay1") {
+                    const runningText = document.querySelector('.runningText');
+                    runningText.classList.remove('hideText');
+                    myPortfolio.closeProjectEvent(runningText);
+               } else if (e.target.className === "overlay2") {
+                    const restaurantText = document.querySelector('.restaurantText');
+                    restaurantText.classList.remove('hideText')
+                    myPortfolio.closeProjectEvent(restaurantText);
+               } else if (e.target.className === "overlay4") {
+                    const gameText = document.querySelector('.gameText');
+                    gameText.classList.remove('hideText')
+                    myPortfolio.closeProjectEvent(gameText);
+               } else if (e.target.className === "overlay3") {
+                    const poemText = document.querySelector('.poemText');
+                    poemText.classList.remove('hideText')
+                    myPortfolio.closeProjectEvent(poemText);
+               };
+          }
+          
+     })
+
 })
 
 //Event Listener to close text on click

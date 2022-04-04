@@ -4,64 +4,64 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="388.734px" height="829.578px" viewBox="0 0 388.734 829.578" enable-background="new 0 0 388.734 829.578"
 	 xml:space="preserve">
-<path fill="#4B4A4B" d="M388.734,795.888c0,14.48,1.436,24.097-3.2,24.097L4.68,819.983C1.446,819.982,0,816.465,0,795.888V39.785
-	c0-13.338-0.709-23.802,3.171-23.802h382.507c4.097,0,3.057,10.845,3.057,23.802V795.888L388.734,795.888z"/>
-<text transform="matrix(1 0 0 1 11.9106 65.3184)" fill="#62943F" font-family="'ComicSansMS'" font-size="14">// create something awesome using javaScript</text>
-<text transform="matrix(1 0 0 1 11.9106 83.1172)" fill="#62943F" font-family="'ComicSansMS'" font-size="14">//once you create something awesome, be sure to go</text>
-<text transform="matrix(1 0 0 1 11.9106 100.918)" fill="#62943F" font-family="'ComicSansMS'" font-size="14">back and make it even more awesome-er</text>
-<text transform="matrix(1 0 0 1 11.9106 118.7188)" fill="#62943F" font-family="'ComicSansMS'" font-size="14">//show off to everyone you know... because they’re going</text>
-<text transform="matrix(1 0 0 1 11.9106 136.5176)" fill="#62943F" font-family="'Calibri'" font-size="14">to love !!!!!!!</text>
-<text transform="matrix(1 0 0 1 77.4434 136.5176)" fill="#68883A" font-family="'MyriadPro-Regular'" font-size="14"> </text>
-<text transform="matrix(1 0 0 1 6.7451 181.5352)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp.init = function(){</text>
-<text transform="matrix(1 0 0 1 6.7451 197.834)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 197.834)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeProject.GetThisPartyStarted()</text>
-<text transform="matrix(1 0 0 1 6.7451 214.1348)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765">}</text>
-<text transform="matrix(1 0 0 1 6.7451 246.7344)" fill="#5C9440" font-family="'ComicSansMS'" font-size="12.765">// check if the user wants to get the party started</text>
-<text transform="matrix(1 0 0 1 6.7451 279.334)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp.HeyThere = document.querySelector( ‘.h1’ );</text>
-<text transform="matrix(1 0 0 1 6.7451 295.6348)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp.HeyThere.addEventListener(’click’ , function() {</text>
-<text transform="matrix(1 0 0 1 6.7451 311.9336)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 311.9336)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">prompt ( ‘Let’s do it!’) ;</text>
-<text transform="matrix(1 0 0 1 6.7451 328.2344)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 328.2344)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">const userInput = document.querySelector( ‘input’);</text>
-<text transform="matrix(1 0 0 1 6.7451 344.5332)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 344.5332)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">if (userInput. value ===  ‘hell yes’) {</text>
-<text transform="matrix(1 0 0 1 6.7451 360.833)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31">  </text>
-<text transform="matrix(1 0 0 1 77.4434 360.833)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">console.log( ‘get the party started then’);</text>
-<text transform="matrix(1 0 0 1 6.7451 377.1328)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 377.1328)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">} else {</text>
-<text transform="matrix(1 0 0 1 6.7451 393.4336)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31">  </text>
-<text transform="matrix(1 0 0 1 77.4434 393.4336)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">console.log( ‘well, I guess we are just going to sit</text>
-<text transform="matrix(1 0 0 1 6.7451 409.7334)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31">  </text>
-<text transform="matrix(1 0 0 1 77.4434 409.7334)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">here and stare at each other then until you say </text>
-<text transform="matrix(1 0 0 1 6.7451 426.0332)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31">  </text>
-<text transform="matrix(1 0 0 1 77.4434 426.0332)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">’hell yes’ ‘);</text>
-<text transform="matrix(1 0 0 1 6.7451 442.3311)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 442.3311)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">}</text>
-<text transform="matrix(1 0 0 1 6.7451 458.6338)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">}</text>
-<text transform="matrix(1 0 0 1 6.7451 491.2324)" fill="#5C9440" font-family="'ComicSansMS'" font-size="12.765">//rate user experience to see if they want to hire you</text>
-<text transform="matrix(1 0 0 1 6.7451 523.8311)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp. HowMuchFunAreYouHavingReadingThis =</text>
-<text transform="matrix(1 0 0 1 6.7451 540.1328)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">document.querySelector( ’form’ );</text>
-<text transform="matrix(1 0 0 1 6.7451 556.4316)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp.HowMuchFunAreYouHavingReadingThis. </text>
-<text transform="matrix(1 0 0 1 6.7451 572.7324)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">.addEventListener ( ‘submit’ , function() {</text>
-<text transform="matrix(1 0 0 1 6.7451 589.0312)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 589.0312)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">const getValue = document.getElementById( </text>
-<text transform="matrix(1 0 0 1 6.7451 605.3301)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 605.3301)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">‘rateYourExperience’) ;</text>
-<text transform="matrix(1 0 0 1 6.7451 621.6328)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 621.6328)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">if (getValue &gt;= 8) { </text>
-<text transform="matrix(1 0 0 1 6.7451 637.9307)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31">  </text>
-<text transform="matrix(1 0 0 1 77.4434 637.9307)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">alert ( ‘I guess you should hire me then’ );</text>
-<text transform="matrix(1 0 0 1 6.7451 654.2314)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 654.2314)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">} else if ( getValue &lt; 8 &amp;&amp; getValue &gt;5) {</text>
-<text transform="matrix(1 0 0 1 6.7451 670.5312)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31">  </text>
-<text transform="matrix(1 0 0 1 77.4434 670.5312)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">alert ( ‘Just keep looking, I’ll win you over ‘ ) </text>
-<text transform="matrix(1 0 0 1 6.7451 686.8291)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 686.8291)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">} else {</text>
-<text transform="matrix(1 0 0 1 6.7451 703.1318)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31">  </text>
-<text transform="matrix(1 0 0 1 77.4434 703.1318)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">alert ( ’No job for me then’)</text>
-<text transform="matrix(1 0 0 1 6.7451 719.4307)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="31"> </text>
-<text transform="matrix(1 0 0 1 42.0942 719.4307)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">}</text>
-<text transform="matrix(1 0 0 1 6.7451 735.7305)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">}</text>
-<text transform="matrix(1 0 0 1 6.7451 768.3291)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeProject.init()</text>
-<text transform="matrix(1 0 0 1 6.7451 782.2734)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="10.8011" letter-spacing="31">  </text>
+<path fill="#4B4A4B" d="M388.734,795.888c0,14.48,1.436,24.098-3.2,24.098L4.68,819.983C1.446,819.982,0,816.465,0,795.888V39.785
+	c0-13.338-0.709-23.802,3.171-23.802h382.507c4.098,0,3.058,10.845,3.058,23.802L388.734,795.888L388.734,795.888z"/>
+<text transform="matrix(1 0 0 1 11.9104 65.3184)" fill="#62943F" font-family="'ComicSansMS'" font-size="14">// create something awesome using javaScript</text>
+<text transform="matrix(1 0 0 1 11.9104 83.1172)" fill="#62943F" font-family="'ComicSansMS'" font-size="14">//once you create something awesome, be sure to go</text>
+<text transform="matrix(1 0 0 1 11.9104 100.918)" fill="#62943F" font-family="'ComicSansMS'" font-size="14">back and make it even more awesome-er</text>
+<text transform="matrix(1 0 0 1 11.9104 118.7188)" fill="#62943F" font-family="'ComicSansMS'" font-size="14">//show off to everyone you know... because they’re going</text>
+<text transform="matrix(1 0 0 1 11.9104 136.5176)" fill="#62943F" font-family="'Calibri'" font-size="14">to love !!!!!!!</text>
+<text transform="matrix(1 0 0 1 77.4431 136.5176)" fill="#68883A" font-family="'MyriadPro-Regular'" font-size="14"> </text>
+<text transform="matrix(1 0 0 1 6.7449 181.5352)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp.init = function(){</text>
+<text transform="matrix(1 0 0 1 6.7449 197.834)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 197.834)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeProject.GetThisPartyStarted()</text>
+<text transform="matrix(1 0 0 1 6.7449 214.1348)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765">}</text>
+<text transform="matrix(1 0 0 1 6.7449 246.7344)" fill="#5C9440" font-family="'ComicSansMS'" font-size="12.765">// check if the user is excited to be here</text>
+<text transform="matrix(1 0 0 1 6.7449 279.334)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp.HeyThere = document.querySelector( ‘.h1’ );</text>
+<text transform="matrix(1 0 0 1 6.7449 295.6348)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp.HeyThere.addEventListener(’click’ , function() {</text>
+<text transform="matrix(1 0 0 1 6.7449 311.9336)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 311.9336)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">prompt ( ‘Let’s do it!’) ;</text>
+<text transform="matrix(1 0 0 1 6.7449 328.2344)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 328.2344)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">const userInput = document.querySelector( ‘input’);</text>
+<text transform="matrix(1 0 0 1 6.7449 344.5332)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 344.5332)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">if (userInput. value ===  ‘heck yes’) {</text>
+<text transform="matrix(1 0 0 1 6.7449 360.833)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30">  </text>
+<text transform="matrix(1 0 0 1 77.4431 360.833)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">console.log( ‘I AM SO EXCITED!’);</text>
+<text transform="matrix(1 0 0 1 6.7449 377.1328)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 377.1328)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">} else {</text>
+<text transform="matrix(1 0 0 1 6.7449 393.4336)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30">  </text>
+<text transform="matrix(1 0 0 1 77.4431 393.4336)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">console.log( ‘well, I guess we are just going to </text>
+<text transform="matrix(1 0 0 1 6.7449 409.7334)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30">  </text>
+<text transform="matrix(1 0 0 1 77.4431 409.7334)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">pause here and wait until you finally say </text>
+<text transform="matrix(1 0 0 1 6.7449 426.0332)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30">  </text>
+<text transform="matrix(1 0 0 1 77.4431 426.0332)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">’heck yes’ ‘);</text>
+<text transform="matrix(1 0 0 1 6.7449 442.3311)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 442.3311)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">}</text>
+<text transform="matrix(1 0 0 1 6.7449 458.6338)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">}</text>
+<text transform="matrix(1 0 0 1 6.7449 491.2324)" fill="#5C9440" font-family="'ComicSansMS'" font-size="12.765">//rate user experience to see if they want to hire you</text>
+<text transform="matrix(1 0 0 1 6.7449 523.8311)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp. HowMuchFunAreYouHavingReadingThis =</text>
+<text transform="matrix(1 0 0 1 6.7449 540.1328)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">document.querySelector( ’form’ );</text>
+<text transform="matrix(1 0 0 1 6.7449 556.4316)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeApp.HowMuchFunAreYouHavingReadingThis. </text>
+<text transform="matrix(1 0 0 1 6.7449 572.7324)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">.addEventListener ( ‘submit’ , function() {</text>
+<text transform="matrix(1 0 0 1 6.7449 589.0312)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 589.0312)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">const getValue = document.getElementById( </text>
+<text transform="matrix(1 0 0 1 6.7449 605.3301)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 605.3301)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">‘rateYourExperience’) ;</text>
+<text transform="matrix(1 0 0 1 6.7449 621.6328)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 621.6328)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">if (getValue &gt;= 8) { </text>
+<text transform="matrix(1 0 0 1 6.7449 637.9307)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30">  </text>
+<text transform="matrix(1 0 0 1 77.4431 637.9307)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">alert ( ‘I guess you should hire me then’ );</text>
+<text transform="matrix(1 0 0 1 6.7449 654.2314)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 654.2314)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">} else if ( getValue &lt; 8 &amp;&amp; getValue &gt;5) {</text>
+<text transform="matrix(1 0 0 1 6.7449 670.5312)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30">  </text>
+<text transform="matrix(1 0 0 1 77.4431 670.5312)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">alert ( ‘Just keep looking, I’ll win you over ‘ ) </text>
+<text transform="matrix(1 0 0 1 6.7449 686.8291)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 686.8291)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">} else {</text>
+<text transform="matrix(1 0 0 1 6.7449 703.1318)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30">  </text>
+<text transform="matrix(1 0 0 1 77.4431 703.1318)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">alert ( ’I guess there‘s next time!’)</text>
+<text transform="matrix(1 0 0 1 6.7449 719.4307)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="12.765" letter-spacing="30"> </text>
+<text transform="matrix(1 0 0 1 42.094 719.4307)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">}</text>
+<text transform="matrix(1 0 0 1 6.7449 735.7305)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">}</text>
+<text transform="matrix(1 0 0 1 6.7449 768.3291)" fill="#C7C6C6" font-family="'ComicSansMS'" font-size="12.765">myAwesomeProject.init()</text>
+<text transform="matrix(1 0 0 1 6.7449 782.2734)" fill="#C7C6C6" font-family="'MyriadPro-Regular'" font-size="10.8011" letter-spacing="30">  </text>
 </svg>
