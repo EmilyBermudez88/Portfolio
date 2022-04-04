@@ -543,11 +543,13 @@ section {
   border-radius: 5px;
   -webkit-box-shadow: 30px 30px 0 #f4e060;
           box-shadow: 30px 30px 0 #f4e060;
+  overflow: hidden;
 }
-.selfPortrait h3 {
-  margin-top: 30%;
-  margin-left: 5%;
-  color: #818181;
+.selfPortrait img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .aboutText {
@@ -944,7 +946,7 @@ header div {
     height: 380px;
   }
   .projectsContainer .app img {
-    max-height: 100%;
+    max-height: 95%;
     padding: 10px 0;
   }
 
@@ -985,7 +987,7 @@ header div {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 0;
-    height: 750px;
+    height: 820px;
   }
   .projectsContainer.secondRow {
     -webkit-box-orient: vertical;
@@ -1047,6 +1049,14 @@ header div {
   }
   .projectsContainer .app img {
     max-width: 95%;
+  }
+  .projectsContainer .restaurantApp img,
+.projectsContainer .poemApp img {
+    max-width: 85%;
+  }
+
+  .firstRow {
+    margin-bottom: 15px;
   }
 
   .contactFlexContainer {

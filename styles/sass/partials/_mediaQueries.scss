@@ -33,7 +33,7 @@
           .app{
                height:380px;
                img{
-                    max-height:100%;
+                    max-height:95%;
                     padding: 10px 0;
                }
           }
@@ -75,7 +75,7 @@
      .projectsContainer {
           flex-direction:column;
           margin-bottom:0;
-          height: 750px;
+          height: 820px;
           &.secondRow{
                flex-direction: column-reverse;
           }
@@ -141,6 +141,15 @@
                     max-width: 95%;
                }
           }
+          .restaurantApp,
+          .poemApp{
+               img{
+                    max-width: 85%;
+               }
+          }
+     }
+     .firstRow {
+          margin-bottom: 15px;
      }
      //FORM
      .contactFlexContainer{
