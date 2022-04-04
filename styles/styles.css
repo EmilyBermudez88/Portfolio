@@ -621,17 +621,17 @@ section {
      object-fit: contain;
 }
 
-.blankApp,
+.poemApp,
 .restaurantApp {
   width: 40%;
 }
-.blankApp img,
+.poemApp img,
 .restaurantApp img {
   max-width: 60%;
 }
 
 .runningApp,
-.colorApp {
+.gameApp {
   width: 55%;
 }
 

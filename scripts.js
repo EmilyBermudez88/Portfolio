@@ -24,13 +24,13 @@ myPortfolio.projectDivs.forEach((project)=>{
                restaurantText.classList.remove('hideText')
                myPortfolio.closeProjectEvent(restaurantText);
           } else if(e.target.className==="overlay4") {
-               const colorText = document.querySelector('.colorText');
-               colorText.classList.remove('hideText')
-               myPortfolio.closeProjectEvent(colorText);
+               const gameText = document.querySelector('.gameText');
+               gameText.classList.remove('hideText')
+               myPortfolio.closeProjectEvent(gameText);
           } else if (e.target.className === "overlay3"){
-               const blankText = document.querySelector('.blankText');
-               blankText.classList.remove('hideText')
-               myPortfolio.closeProjectEvent(blankText);
+               const poemText = document.querySelector('.poemText');
+               poemText.classList.remove('hideText')
+               myPortfolio.closeProjectEvent(poemText);
           };
      })
      project.addEventListener('keypress', (e) => {
@@ -44,13 +44,13 @@ myPortfolio.projectDivs.forEach((project)=>{
                     restaurantText.classList.remove('hideText')
                     myPortfolio.closeProjectEvent(restaurantText);
                } else if (e.target.className === "overlay4") {
-                    const colorText = document.querySelector('.colorText');
-                    colorText.classList.remove('hideText')
-                    myPortfolio.closeProjectEvent(colorText);
+                    const gameText = document.querySelector('.gameText');
+                    gameText.classList.remove('hideText')
+                    myPortfolio.closeProjectEvent(gameText);
                } else if (e.target.className === "overlay3") {
-                    const blankText = document.querySelector('.blankText');
-                    blankText.classList.remove('hideText')
-                    myPortfolio.closeProjectEvent(blankText);
+                    const poemText = document.querySelector('.poemText');
+                    poemText.classList.remove('hideText')
+                    myPortfolio.closeProjectEvent(poemText);
                };
           }
           
