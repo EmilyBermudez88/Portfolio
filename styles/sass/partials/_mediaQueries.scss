@@ -28,6 +28,13 @@
                margin-left: 15%;
           }
      }
+     //ABOUT
+     .portrait1 {
+          display:none;
+     }
+     .portrait2 {
+          display:block
+     }
      //PROJECTS
      .projectsContainer{
           .app{
@@ -57,6 +64,13 @@
      //ABOUT
      .aboutFlexContainer{
           flex-direction:column;
+     }
+     //ABOUT
+     .portrait2 {
+          display:none;
+     }
+     .portrait1 {
+          display:block
      }
      .selfPortrait{
           width: 70%;
@@ -121,8 +135,13 @@
           width: calc(100% - 30px);
           margin-right: 30px;
      }
-
-      .about{
+     .portrait1 {
+          display:none;
+     }
+     .portrait3 {
+          display:block
+     }
+     .about{
           .dots{
                top: 405px;
                transform:rotate(90deg);
@@ -168,6 +187,17 @@
           }
      }
 }
+
+@media(max-width: 500px) {
+     //ABOUT
+     .portrait3 {
+          display:none;
+     }
+     .portrait1 {
+          display:block
+     }
+}
+
 @media(max-width: 430px){
      //HEADER
      header{
