@@ -76,13 +76,11 @@
           flex-direction:column;
           margin-bottom:0;
           height: 820px;
-          &.secondRow{
-               flex-direction: column-reverse;
-          }
           .app{
                width:100%;
                margin-bottom: 30px;
           }
+          background-color: black;
      }
      
      //SKILLSET
