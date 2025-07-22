@@ -52,11 +52,11 @@ section {
      width: 50%;
      p{
           margin-bottom: 15px;
-          &:first-child{
-               font-weight:400;
-               font-size: 1.2rem;
-               color:#696969;
-          }
+          // &:first-child{
+          //      font-weight:400;
+          //      font-size: 1.2rem;
+          //      color:#696969;
+          // }
      }
 }
 
@@ -109,13 +109,13 @@ section {
 }
 
 .poemApp,
-.restaurantApp {
+.runningApp {
      width:40%;
      img{
           max-width: 60%;
      }
 }
-.runningApp,
+.misfiresApp,
 .gameApp {
      width: 55%;
 } 

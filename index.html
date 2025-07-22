@@ -41,12 +41,22 @@
                               <img src="./assets/portrait3.jpg" alt="portrait of me in yellow" class="portrait3">
                          </div>
                          <div class="aboutText">
-                              <p>I'm Emily, and I'm a front-end developer passionate about channeling my creativity into building innovative and accessible platforms. </p>
-                              <p>As a photographer in my previous life, I bring a strong eye for detail, a passion for visual storytelling, and an insatiable curiosity that drives my growth and learning. This desire for learning ultimately led me down the path to becoming a graduate of Juno College’s Immersive Web Development Bootcamp. Countless hours in the
-                              classroom has given me a wide array of skills to add to my toolkit, and I look forward growing this skillset
-                              as I continue my web development
-                              journey.</p>
-                              <p>When I’m not coding, I love to run, score a few goals on the soccer pitch, binge reality TV, and continue my quest for the best sushi in Toronto.</p>
+                              <p>
+                                I'm Emily, a front-end developer passionate about channeling my creativity into building innovative,
+                                accessible, and well-crafted interfaces that are not only visually appealing but also provide an exceptional
+                                and seamless user experience. My keen eye for detail and love for storytelling, cultivated in my previous
+                                career as a photographer, naturally transitioned into my love for web development and continuous learning.
+                              </p>
+                              <p>
+                                My work experience includes contributing to the building and maintenance of a React library of scalable UI
+                                components. Currently, I collaborate closely with designers and developers on a product team, leveraging these
+                                components throughout the Product Development Life Cycle to deliver significant advancements for a data
+                                visualization team.
+                              </p>
+                              <p>
+                                When I’m not coding, I love to run, score a few goals on the soccer pitch, and continue my quest for the
+                                best sushi in Toronto.
+                              </p>
                     </div>  <!-- aboutText end -->
                     </div> <!-- aboutFlexContainer end -->
                     <img src="./assets/dots.svg" alt="" class="dots">
@@ -59,45 +69,47 @@
                     <p class="findOutMore">(click on any projects below to explore further)</p>
 
                     <ul class="projectsContainer">
-                         <li class="app runningApp" aos-init  data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
-                              <img src="./assets/weatherAppLaptop.png" alt="laptop with homescreen for Weather to Run or Not" class="runningImage">
+                          <li class="app misfiresApp" aos-init  data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
+                              <img src="./assets/misfiresAppLaptop.png" alt="laptop with homescreen for Misfires" class="misfiresImage">
                               
                               <div class="overlay1" tabindex="0">
+                                   <div class="misfiresText appText hideText">
+                                        <h3>Misfires</h3>
+                                        <hr>
+                                        <p class="languages">React | HTML | SASS | CSS3</p>
+                                        <p>
+                                          A soccer lineup application enabling users to customize team formations, assign players to
+                                          preferred positions and add substitutes as needed.
+                                        </p>
+                                        <div class="links">
+                                             <a href="https://misfires.netlify.app/" target="_blank" rel="noopener noreferrer" tabindex="0">Live
+                                                  Site</a>
+                                             <a href="https://github.com/EmilyBermudez88/Misfires" target="_blank" rel="noopener noreferrer"
+                                             tabindex="0">GitHub</a>
+                                        </div>
+                                        <i class="fa-solid fa-xmark" tabindex="0"></i>
+                                   </div> <!-- misfiresText end -->
+                              </div>  <!-- overlay end -->
+                         </li> <!-- misfiresApp end -->
+
+                         <li class="app runningApp" aos-init  data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
+                              <img src="./assets/weatherAppTablet.png" alt="tablet with homescreen for Weather to Run">
+                              <div class="overlay2" tabindex="0">
                                    <div class="runningText appText hideText">
                                         <h3>Weather to Run</h3>
                                         <hr>
                                         <p class="languages">JavaScript | REST API | HTML5 | CSS3 | SASS</p>
                                         <p>A running app that helps users decide how to dress for their run in varying weather conditions based on their current location.</p>
                                         <div class="links">
-                                             <a href="https://emilyreadscode.ca/weather-to-run" target="_blank" rel="noopener noreferrer" tabindex="0">Live
-                                                  Site</a>
-                                             <a href="https://github.com/EmilyRead88/Weather-to-Run" target="_blank" rel="noopener noreferrer"
-                                             tabindex="0">GitHub</a>
-                                        </div>
-                                        <i class="fa-solid fa-xmark" tabindex="0"></i>
-                                   </div> <!-- runningText end -->
-                              </div>  <!-- overlay end -->
-                         </li> <!-- runningApp end -->
-
-                         <li class="app restaurantApp" aos-init  data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
-                              <img src="./assets/restaurantAppTablet.png" alt="tablet with homescreen for Restaurant Mall">
-                              <div class="overlay2" tabindex="0">
-                                   <div class="restaurantText appText hideText">
-                                        <h3>Restaurant Mall</h3>
-                                        <hr>
-                                        <p class="languages">HTML5 | CSS3 | SASS</p>
-                                        <p>A multi-page PSD conversion using a style guide and design files provided by a client. Flexbox used to create a
-                                             fully responsive site.</p>
-                                        <div class="links">
-                                             <a href="https://emilyreadscode.ca/restaurant-mall" target="_blank" rel="noopener noreferrer"
+                                             <a href="https://emilyreadscode.ca/weather-to-run" target="_blank" rel="noopener noreferrer"
                                                   tabindex="0">Live Site</a>
-                                             <a href="https://github.com/EmilyRead88/Restaurant-Mall" target="_blank" rel="noopener noreferrer"
+                                             <a href="https://github.com/EmilyRead88/Weather-to-Run" target="_blank" rel="noopener noreferrer"
                                                   tabindex="0">GitHub</a>
                                         </div>
                                         <i class="fa-solid fa-xmark" tabindex="0"></i>
-                                   </div><!-- restaurantText end -->
+                                   </div><!-- runningText end -->
                               </div> <!-- overlay2 end -->
-                         </li> <!-- restaurantApp end -->
+                         </li> <!-- runningApp end -->
                     </ul> <!-- projectsContainer end-->
                     
                     <ul class="projectsContainer">
@@ -127,7 +139,8 @@
                                         <h3>Game Night</h3>
                                         <hr>
                                         <p class="languages">React | REST API | HTML5 | CSS3</p>
-                                        <p>An e-commerce site that generates suggested games based on user selections, and allows users to add / remove items from their cart. </p>
+                                        <p>An e-commerce site that generates suggested games based on user selections, and allows users to add / remove items from their cart.</p>
+                                        <p><strong>Note:</strong> The API powering this app has been discontinued, so generating game lists is no longer functional.</p>
                                         <div class="links">
                                              <a href="https://emilyreadscode.ca/games-night" target="_blank" rel="noopener noreferrer" tabindex="0">Live Site</a>
                                              <a href="https://github.com/EmilyRead88/GamesNight" target="_blank" rel="noopener noreferrer"

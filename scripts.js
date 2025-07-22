@@ -10,15 +10,16 @@ myPortfolio.projectDivs = document.querySelectorAll('.app');
 myPortfolio.projectDivs.forEach((project)=>{
      project.addEventListener('click', (e)=>{
           if(e.target.className==="overlay1") {
-               const runningText = document.querySelector('.runningText');
+               const runningText = document.querySelector('.misfiresText');
                runningText.classList.remove('hideText');
                myPortfolio.closeProjectEvent(runningText);
           } else if (e.target.className==="overlay2") {
-               const restaurantText = document.querySelector('.restaurantText');
+               const restaurantText = document.querySelector('.runningText');
                restaurantText.classList.remove('hideText')
                myPortfolio.closeProjectEvent(restaurantText);
           } else if(e.target.className==="overlay4") {
                const gameText = document.querySelector('.gameText');
+               console.log(gameText);
                gameText.classList.remove('hideText')
                myPortfolio.closeProjectEvent(gameText);
           } else if (e.target.className === "overlay3"){
@@ -55,9 +56,8 @@ myPortfolio.projectDivs.forEach((project)=>{
 
 // Event Listeners to close text on click 
 myPortfolio.closeProjectEvent= function(clickedElement){
-     const icon = clickedElement.childNodes[11];
+     const icon = clickedElement.querySelector('.fa-xmark');
      icon.addEventListener('click', (e)=> {
-          console.log(e);
           clickedElement.classList.add('hideText');
      })
      icon.addEventListener('keypress', (e)=> {
